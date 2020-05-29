@@ -1,2 +1,2 @@
 # phoenix-pcb
-Main cirucuit board of Robocup SSL machine
+A Main circuit board of the Robocup SSL machine
