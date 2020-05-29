@@ -1,0 +1,14 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP Conn_2Rows-75Pins_MountingPin
+D Generic connectable mounting pin connector, double row, 75 pins, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
+$CMP VBAT_IN
+D power-flag symbol (positive battery voltage)
+K Power Flag Symbol battery
+$ENDCMP
+#
+#End Doc Library

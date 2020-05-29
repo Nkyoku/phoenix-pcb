@@ -1,0 +1,7 @@
+(sym_lib_table
+  (lib (name Phoenix)(type Legacy)(uri ${KIPRJMOD}/Phoenix.lib)(options "")(descr ""))
+  (lib (name Device)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/Device.lib)(options "")(descr ""))
+  (lib (name Connector_Generic_MountingPin)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/Connector_Generic_MountingPin.lib)(options "")(descr ""))
+  (lib (name PhoenixEvbProcessor)(type Legacy)(uri C:/work/Robocup/PhoenixEvbProcessor/PhoenixEvbProcessor.lib)(options "")(descr ""))
+  (lib (name Switch)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/Switch.lib)(options "")(descr ""))
+)

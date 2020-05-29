@@ -1,0 +1,259 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 15 24
+Title "Phoenix DVT"
+Date "2020-05-18"
+Rev "1"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 8500 3200 2    50   Output ~ 0
+TARGET_TCK
+Text HLabel 8500 3300 2    50   Output ~ 0
+TARGET_TMS
+Text HLabel 8500 3400 2    50   Output ~ 0
+TARGET_TDI
+Text HLabel 8500 3500 2    50   Input ~ 0
+TARGET_TDO
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J?
+U 1 1 5ED1E5C2
+P 5600 4500
+AR Path="/5E4B5786/5ED1E5C2" Ref="J?"  Part="1" 
+AR Path="/5EF045E7/5ED1E5C2" Ref="J17"  Part="1" 
+F 0 "J17" H 5650 4800 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 5650 4200 50  0000 C CNN
+F 2 "Phoenix:PinHeader_2x05_P1.27mm_Vertical" H 5600 4500 50  0001 C CNN
+F 3 "" H 5600 4500 50  0001 C CNN
+F 4 "PH11-2x5SAG" H 5600 4500 50  0001 C CNN "PartName"
+F 5 "秋月電子" H 5600 4500 50  0001 C CNN "Supplier"
+	1    5600 4500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L passive:R R?
+U 1 1 5ED1E5C8
+P 7200 3700
+AR Path="/5E4B5786/5ED1E5C8" Ref="R?"  Part="1" 
+AR Path="/5EF045E7/5ED1E5C8" Ref="R90"  Part="1" 
+F 0 "R90" H 7258 3746 50  0000 L CNN
+F 1 "1k" H 7258 3655 50  0000 L CNN
+F 2 "Resistor-Chip:R_CHIP_1005_Hand_NoSilk" V 7250 3600 50  0001 C CNN
+F 3 "" H 7250 3800 50  0001 C CNN
+F 4 "RK73B1ETTP102J" H 7200 3700 50  0001 C CNN "PartName"
+F 5 "P板" H 7200 3700 50  0001 C CNN "Supplier"
+	1    7200 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L supply-alias:GND #PWR?
+U 1 1 5ED1E5DE
+P 5100 4700
+AR Path="/5E9E174E/5ED1E5DE" Ref="#PWR?"  Part="1" 
+AR Path="/5E4B5786/5ED1E5DE" Ref="#PWR?"  Part="1" 
+AR Path="/5EF045E7/5ED1E5DE" Ref="#PWR0287"  Part="1" 
+F 0 "#PWR0287" H 5100 4450 50  0001 C CNN
+F 1 "GND" H 5100 4550 50  0000 C CNN
+F 2 "" H 5100 4700 50  0001 C CNN
+F 3 "" H 5100 4700 50  0001 C CNN
+	1    5100 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 4700 5300 4700
+Wire Wire Line
+	5100 4700 5100 4300
+Wire Wire Line
+	5100 4300 5300 4300
+Connection ~ 5100 4700
+Wire Wire Line
+	4900 4400 5300 4400
+Wire Wire Line
+	5800 4300 6500 4300
+Wire Wire Line
+	6500 4300 6500 3200
+Wire Wire Line
+	6500 3200 7200 3200
+Wire Wire Line
+	5800 4400 6600 4400
+Wire Wire Line
+	5800 4500 6700 4500
+Wire Wire Line
+	6700 4500 6700 3300
+Wire Wire Line
+	6700 3300 7000 3300
+Wire Wire Line
+	5800 4700 6800 4700
+Wire Wire Line
+	7200 3600 7200 3200
+Connection ~ 7200 3200
+Wire Wire Line
+	7200 3200 7900 3200
+$Comp
+L passive:R R?
+U 1 1 5ED1E5F8
+P 7000 3000
+AR Path="/5E4B5786/5ED1E5F8" Ref="R?"  Part="1" 
+AR Path="/5EF045E7/5ED1E5F8" Ref="R89"  Part="1" 
+F 0 "R89" H 7058 3046 50  0000 L CNN
+F 1 "10k" H 7058 2955 50  0000 L CNN
+F 2 "Resistor-Chip:R_CHIP_1005_Hand_NoSilk" V 7050 2900 50  0001 C CNN
+F 3 "" H 7050 3100 50  0001 C CNN
+F 4 "RK73H1ETTP1002F" H 7000 3000 50  0001 C CNN "PartName"
+F 5 "P板" H 7000 3000 50  0001 C CNN "Supplier"
+	1    7000 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 3100 7000 3300
+Connection ~ 7000 3300
+Wire Wire Line
+	7000 3300 7900 3300
+$Comp
+L passive:R R?
+U 1 1 5ED1E601
+P 7400 3000
+AR Path="/5E4B5786/5ED1E601" Ref="R?"  Part="1" 
+AR Path="/5EF045E7/5ED1E601" Ref="R91"  Part="1" 
+F 0 "R91" H 7458 3046 50  0000 L CNN
+F 1 "10k" H 7458 2955 50  0000 L CNN
+F 2 "Resistor-Chip:R_CHIP_1005_Hand_NoSilk" V 7450 2900 50  0001 C CNN
+F 3 "" H 7450 3100 50  0001 C CNN
+F 4 "RK73H1ETTP1002F" H 7400 3000 50  0001 C CNN "PartName"
+F 5 "P板" H 7400 3000 50  0001 C CNN "Supplier"
+	1    7400 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 2900 7000 2800
+Wire Wire Line
+	7400 2800 7400 2900
+$Comp
+L passive:R_Array_4 RA?
+U 2 1 5ED1E618
+P 8000 3500
+AR Path="/5E4B5B3E/5ED1E618" Ref="RA?"  Part="2" 
+AR Path="/5E4B5786/5ED1E618" Ref="RA?"  Part="2" 
+AR Path="/5EF045E7/5ED1E618" Ref="RA10"  Part="2" 
+F 0 "RA10" V 7950 3350 50  0000 R CNN
+F 1 "51" V 7950 3650 50  0000 L CNN
+F 2 "Resistor-Chip:R_CHIP_4x1005_CONCAVE" H 8000 3500 50  0001 C CNN
+F 3 "" H 8000 3500 50  0001 C CNN
+F 4 "EXB-N8V510JX" H 8000 3500 50  0001 C CNN "PartName"
+	2    8000 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L passive:R_Array_4 RA?
+U 3 1 5ED1E61E
+P 8000 3200
+AR Path="/5E4B5B3E/5ED1E61E" Ref="RA?"  Part="3" 
+AR Path="/5E4B5786/5ED1E61E" Ref="RA?"  Part="3" 
+AR Path="/5EF045E7/5ED1E61E" Ref="RA10"  Part="3" 
+F 0 "RA10" V 7950 3050 50  0000 R CNN
+F 1 "51" V 7950 3350 50  0000 L CNN
+F 2 "Resistor-Chip:R_CHIP_4x1005_CONCAVE" H 8000 3200 50  0001 C CNN
+F 3 "" H 8000 3200 50  0001 C CNN
+F 4 "EXB-N8V510JX" H 8000 3200 50  0001 C CNN "PartName"
+	3    8000 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L passive:R_Array_4 RA?
+U 4 1 5ED1E624
+P 8000 3300
+AR Path="/5E4B5B3E/5ED1E624" Ref="RA?"  Part="4" 
+AR Path="/5E4B5786/5ED1E624" Ref="RA?"  Part="4" 
+AR Path="/5EF045E7/5ED1E624" Ref="RA10"  Part="4" 
+F 0 "RA10" V 7950 3150 50  0000 R CNN
+F 1 "51" V 7950 3450 50  0000 L CNN
+F 2 "Resistor-Chip:R_CHIP_4x1005_CONCAVE" H 8000 3300 50  0001 C CNN
+F 3 "" H 8000 3300 50  0001 C CNN
+F 4 "EXB-N8V510JX" H 8000 3300 50  0001 C CNN "PartName"
+	4    8000 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L supply-alias:GND #PWR?
+U 1 1 5ED1E62A
+P 7200 3800
+AR Path="/5E9E174E/5ED1E62A" Ref="#PWR?"  Part="1" 
+AR Path="/5E4B5786/5ED1E62A" Ref="#PWR?"  Part="1" 
+AR Path="/5EF045E7/5ED1E62A" Ref="#PWR0289"  Part="1" 
+F 0 "#PWR0289" H 7200 3550 50  0001 C CNN
+F 1 "GND" H 7200 3650 50  0000 C CNN
+F 2 "" H 7200 3800 50  0001 C CNN
+F 3 "" H 7200 3800 50  0001 C CNN
+	1    7200 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 3300 8500 3300
+Wire Wire Line
+	8100 3200 8500 3200
+$Comp
+L passive:R_Array_4 RA?
+U 1 1 5ED1E636
+P 8000 3400
+AR Path="/5E4B5B3E/5ED1E636" Ref="RA?"  Part="1" 
+AR Path="/5E4B5786/5ED1E636" Ref="RA?"  Part="1" 
+AR Path="/5EF045E7/5ED1E636" Ref="RA10"  Part="1" 
+F 0 "RA10" V 7950 3250 50  0000 R CNN
+F 1 "51" V 7950 3550 50  0000 L CNN
+F 2 "Resistor-Chip:R_CHIP_4x1005_CONCAVE" H 8000 3400 50  0001 C CNN
+F 3 "" H 8000 3400 50  0001 C CNN
+F 4 "EXB-N8V510JX" H 8000 3400 50  0001 C CNN "PartName"
+	1    8000 3400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8100 3500 8500 3500
+Wire Wire Line
+	8100 3400 8500 3400
+Wire Wire Line
+	6600 3500 6600 4400
+Wire Wire Line
+	6800 3400 6800 4700
+Wire Wire Line
+	6800 3400 7400 3400
+Wire Wire Line
+	6600 3500 7900 3500
+Wire Wire Line
+	7400 3400 7400 3100
+Connection ~ 7400 3400
+Wire Wire Line
+	7400 3400 7900 3400
+$Comp
+L supply-value:+1V8 #PWR0286
+U 1 1 5F8A9579
+P 4900 4400
+F 0 "#PWR0286" H 4900 4250 50  0001 C CNN
+F 1 "+1V8" H 4900 4540 50  0000 C CNN
+F 2 "" H 4900 4400 50  0001 C CNN
+F 3 "" H 4900 4400 50  0001 C CNN
+	1    4900 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 2800 7200 2800
+$Comp
+L supply-value:+1V8 #PWR0288
+U 1 1 5F8AA51D
+P 7200 2800
+F 0 "#PWR0288" H 7200 2650 50  0001 C CNN
+F 1 "+1V8" H 7200 2940 50  0000 C CNN
+F 2 "" H 7200 2800 50  0001 C CNN
+F 3 "" H 7200 2800 50  0001 C CNN
+	1    7200 2800
+	1    0    0    -1  
+$EndComp
+Connection ~ 7200 2800
+Wire Wire Line
+	7200 2800 7400 2800
+$EndSCHEMATC

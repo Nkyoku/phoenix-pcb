@@ -1,0 +1,203 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 16 24
+Title "Phoenix DVT"
+Date "2020-05-18"
+Rev "1"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L sensor-tdk:ICM-42688-P U?
+U 1 1 5E44687D
+P 6000 4000
+AR Path="/5E44687D" Ref="U?"  Part="1" 
+AR Path="/5E44623C/5E44687D" Ref="U?"  Part="1" 
+AR Path="/5E4EB435/5E44687D" Ref="U34"  Part="1" 
+F 0 "U34" H 6000 4650 50  0000 C CNN
+F 1 "ICM-42688-P" H 6000 3350 50  0000 C CNN
+F 2 "Phoenix:LGA14_3.0x2.5_P0.5" H 6000 4000 50  0001 C CNN
+F 3 "" H 6000 4000 50  0001 C CNN
+F 4 "ICM-42688-P" H 6000 4000 50  0001 C CNN "PartName"
+F 5 "Mouser" H 6000 4000 50  0001 C CNN "Supplier"
+	1    6000 4000
+	1    0    0    -1  
+$EndComp
+Text HLabel 9900 3500 2    50   Output ~ 0
+INT
+Text HLabel 9900 3700 2    50   Input ~ 0
+CLKIN
+Text HLabel 9900 3900 2    50   Input ~ 0
+~CS
+Text HLabel 9900 4100 2    50   Input ~ 0
+SCLK
+Text HLabel 9900 4300 2    50   Input ~ 0
+SDI
+Text HLabel 9900 4500 2    50   Output ~ 0
+SDO
+$Comp
+L supply-alias:GND #PWR0291
+U 1 1 5F569604
+P 4300 3900
+F 0 "#PWR0291" H 4300 3650 50  0001 C CNN
+F 1 "GND" H 4300 3750 50  0000 C CNN
+F 2 "" H 4300 3900 50  0001 C CNN
+F 3 "" H 4300 3900 50  0001 C CNN
+	1    4300 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 4300 5100 4300
+NoConn ~ 5100 4100
+NoConn ~ 5100 4200
+NoConn ~ 5100 4400
+$Comp
+L passive:C C133
+U 1 1 5F56B475
+P 4700 3700
+F 0 "C133" H 4800 3750 50  0000 L CNN
+F 1 "100n" H 4800 3650 50  0000 L CNN
+F 2 "Capacitor-Chip:C_CHIP_1005_Hand_NoSilk" H 4800 3600 50  0001 C CNN
+F 3 "" H 4725 3800 50  0001 C CNN
+F 4 "GRM155R71H104ME14D" H 4700 3700 50  0001 C CNN "PartName"
+	1    4700 3700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 3600 4700 3500
+Connection ~ 4700 3500
+Wire Wire Line
+	4700 3500 4300 3500
+Wire Wire Line
+	4700 3800 4700 3900
+Connection ~ 4700 3900
+$Comp
+L passive:C C131
+U 1 1 5F56C446
+P 4300 3700
+F 0 "C131" H 4400 3750 50  0000 L CNN
+F 1 "10u" H 4400 3650 50  0000 L CNN
+F 2 "Capacitor-Chip:C_CHIP_1005_Hand_NoSilk" H 4400 3600 50  0001 C CNN
+F 3 "" H 4325 3800 50  0001 C CNN
+F 4 "GRJ155R60J106ME11D" H 4300 3700 50  0001 C CNN "PartName"
+	1    4300 3700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 3600 4300 3500
+Wire Wire Line
+	4300 3800 4300 3900
+Connection ~ 4300 3900
+Wire Wire Line
+	4300 3900 4700 3900
+$Comp
+L passive:L_Ferrite L?
+U 1 1 5F57AD1E
+P 4000 3500
+AR Path="/5E3CE3F9/5F57AD1E" Ref="L?"  Part="1" 
+AR Path="/5E4A06A4/5F57AD1E" Ref="L?"  Part="1" 
+AR Path="/5E65EBEC/5F57AD1E" Ref="L?"  Part="1" 
+AR Path="/5E4A98E7/5F57AD1E" Ref="L?"  Part="1" 
+AR Path="/5E4EB435/5F57AD1E" Ref="L12"  Part="1" 
+F 0 "L12" V 4235 3500 50  0000 C CNN
+F 1 "600" V 4144 3500 50  0000 C CNN
+F 2 "Inductor-Chip:L_CHIP_1005_Hand_NoSilk" H 4100 3400 50  0001 C CNN
+F 3 "" H 4025 3500 50  0001 C CNN
+F 4 "BLM15PX601SN1D" H 4000 3500 50  0001 C CNN "PartName"
+	1    4000 3500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4100 3500 4300 3500
+Connection ~ 4300 3500
+$Comp
+L passive:C C132
+U 1 1 5F588122
+P 4700 3100
+F 0 "C132" H 4800 3150 50  0000 L CNN
+F 1 "100n" H 4800 3050 50  0000 L CNN
+F 2 "Capacitor-Chip:C_CHIP_1005_Hand_NoSilk" H 4800 3000 50  0001 C CNN
+F 3 "" H 4725 3200 50  0001 C CNN
+F 4 "GRM155R71H104ME14D" H 4700 3100 50  0001 C CNN "PartName"
+	1    4700 3100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 3700 5000 3700
+Wire Wire Line
+	5000 3700 5000 2900
+Wire Wire Line
+	5000 2900 4700 2900
+Wire Wire Line
+	4700 2900 4700 3000
+Wire Wire Line
+	4700 3500 5100 3500
+Wire Wire Line
+	4700 3900 5100 3900
+$Comp
+L supply-alias:GND #PWR0293
+U 1 1 5F58E423
+P 4700 3200
+F 0 "#PWR0293" H 4700 2950 50  0001 C CNN
+F 1 "GND" H 4700 3050 50  0000 C CNN
+F 2 "" H 4700 3200 50  0001 C CNN
+F 3 "" H 4700 3200 50  0001 C CNN
+	1    4700 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 3500 9900 3500
+Wire Wire Line
+	6900 3700 9900 3700
+Wire Wire Line
+	6900 4300 9900 4300
+Wire Wire Line
+	6900 4100 9900 4100
+Wire Wire Line
+	6900 3900 9900 3900
+Wire Wire Line
+	6900 4500 9900 4500
+$Comp
+L supply-value:+3V3 #PWR0292
+U 1 1 5EFDBC2F
+P 4700 2900
+F 0 "#PWR0292" H 4700 2750 50  0001 C CNN
+F 1 "+3V3" H 4700 3040 50  0000 C CNN
+F 2 "" H 4700 2900 50  0001 C CNN
+F 3 "" H 4700 2900 50  0001 C CNN
+	1    4700 2900
+	1    0    0    -1  
+$EndComp
+Connection ~ 4700 2900
+$Comp
+L supply-value:+3V3 #PWR0290
+U 1 1 5EFDC1BF
+P 3700 3500
+F 0 "#PWR0290" H 3700 3350 50  0001 C CNN
+F 1 "+3V3" H 3700 3640 50  0000 C CNN
+F 2 "" H 3700 3500 50  0001 C CNN
+F 3 "" H 3700 3500 50  0001 C CNN
+	1    3700 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 3500 3900 3500
+NoConn ~ 5100 4500
+$Comp
+L supply-alias:GND #PWR0294
+U 1 1 5F56A9C4
+P 4900 4300
+F 0 "#PWR0294" H 4900 4050 50  0001 C CNN
+F 1 "GND" H 4900 4150 50  0000 C CNN
+F 2 "" H 4900 4300 50  0001 C CNN
+F 3 "" H 4900 4300 50  0001 C CNN
+	1    4900 4300
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

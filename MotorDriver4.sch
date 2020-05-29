@@ -1,0 +1,1785 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 22 24
+Title "Phoenix DVT"
+Date "2020-05-18"
+Rev "1"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power-ti:DRV8312DDW U?
+U 1 1 5E61F4E9
+P 4000 2900
+AR Path="/5EFFEFDE/5F019185/5E61F4E9" Ref="U?"  Part="1" 
+AR Path="/5F062C46/5E61F4E9" Ref="U?"  Part="1" 
+AR Path="/5F235A43/5E61F4E9" Ref="U?"  Part="1" 
+AR Path="/5F237486/5E61F4E9" Ref="U?"  Part="1" 
+AR Path="/5F259EEE/5E61F4E9" Ref="U?"  Part="1" 
+AR Path="/5F259F7D/5E61F4E9" Ref="U50"  Part="1" 
+F 0 "U50" H 4000 4750 50  0000 C CNN
+F 1 "DRV8312DDWR" H 4000 1150 50  0000 C CNN
+F 2 "IC-SOP:HTSSOP44-W6.1_EP4.31x8.26" H 4000 2900 50  0001 C CNN
+F 3 "" H 4000 2900 50  0001 C CNN
+F 4 "DRV8312DDWR" H 4000 2900 50  0001 C CNN "PartName"
+	1    4000 2900
+	1    0    0    -1  
+$EndComp
+Text HLabel 1500 3300 0    50   Input ~ 0
+PWM_A
+Text HLabel 1500 3400 0    50   Input ~ 0
+PWM_B
+Text HLabel 1500 3500 0    50   Input ~ 0
+PWM_C
+Text HLabel 1500 3600 0    50   Input ~ 0
+~RESET_A
+Text HLabel 1500 3700 0    50   Input ~ 0
+~RESET_B
+Text HLabel 1500 3800 0    50   Input ~ 0
+~RESET_C
+Text HLabel 1500 3100 0    50   Output ~ 0
+~OTW
+Text HLabel 1500 3000 0    50   Output ~ 0
+~FAULT
+$Comp
+L passive:C C?
+U 1 1 5E61F503
+P 5200 4300
+AR Path="/5EFFEFDE/5F019185/5E61F503" Ref="C?"  Part="1" 
+AR Path="/5F062C46/5E61F503" Ref="C?"  Part="1" 
+AR Path="/5F235A43/5E61F503" Ref="C?"  Part="1" 
+AR Path="/5F237486/5E61F503" Ref="C?"  Part="1" 
+AR Path="/5F259EEE/5E61F503" Ref="C?"  Part="1" 
+AR Path="/5F259F7D/5E61F503" Ref="C223"  Part="1" 
+F 0 "C223" V 5432 4300 50  0000 C CNN
+F 1 "100n" V 5341 4300 50  0000 C CNN
+F 2 "Capacitor-Chip:C_CHIP_1005_Hand_NoSilk" H 5300 4200 50  0001 C CNN
+F 3 "" H 5225 4400 50  0001 C CNN
+F 4 "GRM155R71H104ME14D" H 5200 4300 50  0001 C CNN "PartName"
+	1    5200 4300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L supply-value:+48V #PWR?
+U 1 1 5E61F50D
+P 4800 3600
+AR Path="/5EFFEFDE/5F019185/5E61F50D" Ref="#PWR?"  Part="1" 
+AR Path="/5F062C46/5E61F50D" Ref="#PWR?"  Part="1" 
+AR Path="/5F235A43/5E61F50D" Ref="#PWR?"  Part="1" 
+AR Path="/5F237486/5E61F50D" Ref="#PWR?"  Part="1" 
+AR Path="/5F259EEE/5E61F50D" Ref="#PWR?"  Part="1" 
+AR Path="/5F259F7D/5E61F50D" Ref="#PWR0420"  Part="1" 
+F 0 "#PWR0420" H 4800 3450 50  0001 C CNN
+F 1 "+48V" H 4800 3740 50  0000 C CNN
+F 2 "" H 4800 3600 50  0001 C CNN
+F 3 "" H 4800 3600 50  0001 C CNN
+	1    4800 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L supply-value:+12V #PWR?
+U 1 1 5E61F513
+P 1800 1200
+AR Path="/5EFFEFDE/5F019185/5E61F513" Ref="#PWR?"  Part="1" 
+AR Path="/5F062C46/5E61F513" Ref="#PWR?"  Part="1" 
+AR Path="/5F235A43/5E61F513" Ref="#PWR?"  Part="1" 
+AR Path="/5F237486/5E61F513" Ref="#PWR?"  Part="1" 
+AR Path="/5F259EEE/5E61F513" Ref="#PWR?"  Part="1" 
+AR Path="/5F259F7D/5E61F513" Ref="#PWR0401"  Part="1" 
+F 0 "#PWR0401" H 1800 1050 50  0001 C CNN
+F 1 "+12V" H 1800 1340 50  0000 C CNN
+F 2 "" H 1800 1200 50  0001 C CNN
+F 3 "" H 1800 1200 50  0001 C CNN
+	1    1800 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L supply-alias:GND #PWR?
+U 1 1 5E61F519
+P 4800 4000
+AR Path="/5EFFEFDE/5F019185/5E61F519" Ref="#PWR?"  Part="1" 
+AR Path="/5F062C46/5E61F519" Ref="#PWR?"  Part="1" 
+AR Path="/5F235A43/5E61F519" Ref="#PWR?"  Part="1" 
+AR Path="/5F237486/5E61F519" Ref="#PWR?"  Part="1" 
+AR Path="/5F259EEE/5E61F519" Ref="#PWR?"  Part="1" 
+AR Path="/5F259F7D/5E61F519" Ref="#PWR0421"  Part="1" 
+F 0 "#PWR0421" H 4800 3750 50  0001 C CNN
+F 1 "GND" H 4800 3850 50  0000 C CNN
+F 2 "" H 4800 4000 50  0001 C CNN
+F 3 "" H 4800 4000 50  0001 C CNN
+	1    4800 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 4000 4600 4000
+Wire Wire Line
+	4800 3600 4600 3600
+Wire Wire Line
+	4600 3700 4800 3700
+Wire Wire Line
+	4800 3700 4800 3600
+Connection ~ 4800 3600
+Wire Wire Line
+	4600 2100 4800 2100
+$Comp
+L passive:C C?
+U 1 1 5E61F52E
+P 4800 2000
+AR Path="/5EFFEFDE/5F019185/5E61F52E" Ref="C?"  Part="1" 
+AR Path="/5F062C46/5E61F52E" Ref="C?"  Part="1" 
+AR Path="/5F235A43/5E61F52E" Ref="C?"  Part="1" 
+AR Path="/5F237486/5E61F52E" Ref="C?"  Part="1" 
+AR Path="/5F259EEE/5E61F52E" Ref="C?"  Part="1" 
+AR Path="/5F259F7D/5E61F52E" Ref="C218"  Part="1" 
+F 0 "C218" H 4900 2050 50  0000 L CNN
+F 1 "100n" H 4900 1950 50  0000 L CNN
+F 2 "Capacitor-Chip:C_CHIP_1005_Hand_NoSilk" H 4900 1900 50  0001 C CNN
+F 3 "" H 4825 2100 50  0001 C CNN
+F 4 "GRM155R71H104ME14D" H 4800 2000 50  0001 C CNN "PartName"
+	1    4800 2000
+	1    0    0    -1  
+$EndComp
+Connection ~ 4800 2100
+Wire Wire Line
+	4600 1900 4800 1900
+$Comp
+L supply-alias:GND #PWR?
+U 1 1 5E61F538
+P 4800 2800
+AR Path="/5EFFEFDE/5F019185/5E61F538" Ref="#PWR?"  Part="1" 
+AR Path="/5F062C46/5E61F538" Ref="#PWR?"  Part="1" 
+AR Path="/5F235A43/5E61F538" Ref="#PWR?"  Part="1" 
+AR Path="/5F237486/5E61F538" Ref="#PWR?"  Part="1" 
+AR Path="/5F259EEE/5E61F538" Ref="#PWR?"  Part="1" 
+AR Path="/5F259F7D/5E61F538" Ref="#PWR0419"  Part="1" 
+F 0 "#PWR0419" H 4800 2550 50  0001 C CNN
+F 1 "GND" H 4800 2650 50  0000 C CNN
+F 2 "" H 4800 2800 50  0001 C CNN
+F 3 "" H 4800 2800 50  0001 C CNN
+	1    4800 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 2800 4600 2800
+$Comp
+L supply-alias:GND #PWR?
+U 1 1 5E61F53F
+P 4800 1600
+AR Path="/5EFFEFDE/5F019185/5E61F53F" Ref="#PWR?"  Part="1" 
+AR Path="/5F062C46/5E61F53F" Ref="#PWR?"  Part="1" 
+AR Path="/5F235A43/5E61F53F" Ref="#PWR?"  Part="1" 
+AR Path="/5F237486/5E61F53F" Ref="#PWR?"  Part="1" 
+AR Path="/5F259EEE/5E61F53F" Ref="#PWR?"  Part="1" 
+AR Path="/5F259F7D/5E61F53F" Ref="#PWR0417"  Part="1" 
+F 0 "#PWR0417" H 4800 1350 50  0001 C CNN
+F 1 "GND" H 4800 1450 50  0000 C CNN
+F 2 "" H 4800 1600 50  0001 C CNN
+F 3 "" H 4800 1600 50  0001 C CNN
+	1    4800 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 1600 4600 1600
+Wire Wire Line
+	4600 1300 4800 1300
+Wire Wire Line
+	4800 1300 4800 1200
+Wire Wire Line
+	4800 1200 4600 1200
+Wire Wire Line
+	4600 2400 4800 2400
+$Comp
+L supply-value:+48V #PWR?
+U 1 1 5E61F54A
+P 4800 2400
+AR Path="/5EFFEFDE/5F019185/5E61F54A" Ref="#PWR?"  Part="1" 
+AR Path="/5F062C46/5E61F54A" Ref="#PWR?"  Part="1" 
+AR Path="/5F235A43/5E61F54A" Ref="#PWR?"  Part="1" 
+AR Path="/5F237486/5E61F54A" Ref="#PWR?"  Part="1" 
+AR Path="/5F259EEE/5E61F54A" Ref="#PWR?"  Part="1" 
+AR Path="/5F259F7D/5E61F54A" Ref="#PWR0418"  Part="1" 
+F 0 "#PWR0418" H 4800 2250 50  0001 C CNN
+F 1 "+48V" H 4800 2540 50  0000 C CNN
+F 2 "" H 4800 2400 50  0001 C CNN
+F 3 "" H 4800 2400 50  0001 C CNN
+	1    4800 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L supply-value:+48V #PWR?
+U 1 1 5E61F550
+P 4800 1200
+AR Path="/5EFFEFDE/5F019185/5E61F550" Ref="#PWR?"  Part="1" 
+AR Path="/5F062C46/5E61F550" Ref="#PWR?"  Part="1" 
+AR Path="/5F235A43/5E61F550" Ref="#PWR?"  Part="1" 
+AR Path="/5F237486/5E61F550" Ref="#PWR?"  Part="1" 
+AR Path="/5F259EEE/5E61F550" Ref="#PWR?"  Part="1" 
+AR Path="/5F259F7D/5E61F550" Ref="#PWR0416"  Part="1" 
+F 0 "#PWR0416" H 4800 1050 50  0001 C CNN
+F 1 "+48V" H 4800 1340 50  0000 C CNN
+F 2 "" H 4800 1200 50  0001 C CNN
+F 3 "" H 4800 1200 50  0001 C CNN
+	1    4800 1200
+	1    0    0    -1  
+$EndComp
+Connection ~ 4800 1200
+$Comp
+L passive:C C?
+U 1 1 5E61F557
+P 4800 1400
+AR Path="/5EFFEFDE/5F019185/5E61F557" Ref="C?"  Part="1" 
+AR Path="/5F062C46/5E61F557" Ref="C?"  Part="1" 
+AR Path="/5F235A43/5E61F557" Ref="C?"  Part="1" 
+AR Path="/5F237486/5E61F557" Ref="C?"  Part="1" 
+AR Path="/5F259EEE/5E61F557" Ref="C?"  Part="1" 
+AR Path="/5F259F7D/5E61F557" Ref="C217"  Part="1" 
+F 0 "C217" H 4900 1450 50  0000 L CNN
+F 1 "100n" H 4900 1350 50  0000 L CNN
+F 2 "Capacitor-Chip:C_CHIP_1608_Reflow" H 4900 1300 50  0001 C CNN
+F 3 "" H 4825 1500 50  0001 C CNN
+F 4 "GCJ188R72A104KA01D" H 4800 1400 50  0001 C CNN "PartName"
+	1    4800 1400
+	1    0    0    -1  
+$EndComp
+Connection ~ 4800 1300
+Wire Wire Line
+	4800 1500 4800 1600
+Connection ~ 4800 1600
+$Comp
+L passive:C C?
+U 1 1 5E61F560
+P 4800 2600
+AR Path="/5EFFEFDE/5F019185/5E61F560" Ref="C?"  Part="1" 
+AR Path="/5F062C46/5E61F560" Ref="C?"  Part="1" 
+AR Path="/5F235A43/5E61F560" Ref="C?"  Part="1" 
+AR Path="/5F237486/5E61F560" Ref="C?"  Part="1" 
+AR Path="/5F259EEE/5E61F560" Ref="C?"  Part="1" 
+AR Path="/5F259F7D/5E61F560" Ref="C219"  Part="1" 
+F 0 "C219" H 4900 2650 50  0000 L CNN
+F 1 "100n" H 4900 2550 50  0000 L CNN
+F 2 "Capacitor-Chip:C_CHIP_1608_Reflow" H 4900 2500 50  0001 C CNN
+F 3 "" H 4825 2700 50  0001 C CNN
+F 4 "GCJ188R72A104KA01D" H 4800 2600 50  0001 C CNN "PartName"
+	1    4800 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 2500 4800 2400
+Connection ~ 4800 2400
+Wire Wire Line
+	4800 2700 4800 2800
+Connection ~ 4800 2800
+$Comp
+L passive:C C?
+U 1 1 5E61F56A
+P 4800 3800
+AR Path="/5EFFEFDE/5F019185/5E61F56A" Ref="C?"  Part="1" 
+AR Path="/5F062C46/5E61F56A" Ref="C?"  Part="1" 
+AR Path="/5F235A43/5E61F56A" Ref="C?"  Part="1" 
+AR Path="/5F237486/5E61F56A" Ref="C?"  Part="1" 
+AR Path="/5F259EEE/5E61F56A" Ref="C?"  Part="1" 
+AR Path="/5F259F7D/5E61F56A" Ref="C220"  Part="1" 
+F 0 "C220" H 4900 3850 50  0000 L CNN
+F 1 "100n" H 4900 3750 50  0000 L CNN
+F 2 "Capacitor-Chip:C_CHIP_1608_Reflow" H 4900 3700 50  0001 C CNN
+F 3 "" H 4825 3900 50  0001 C CNN
+F 4 "GCJ188R72A104KA01D" H 4800 3800 50  0001 C CNN "PartName"
+	1    4800 3800
+	1    0    0    -1  
+$EndComp
+Connection ~ 4800 3700
+Wire Wire Line
+	4800 3900 4800 4000
+Connection ~ 4800 4000
+$Comp
+L passive:C C?
+U 1 1 5E61F573
+P 3000 1400
+AR Path="/5EFFEFDE/5F019185/5E61F573" Ref="C?"  Part="1" 
+AR Path="/5F062C46/5E61F573" Ref="C?"  Part="1" 
+AR Path="/5F235A43/5E61F573" Ref="C?"  Part="1" 
+AR Path="/5F237486/5E61F573" Ref="C?"  Part="1" 
+AR Path="/5F259EEE/5E61F573" Ref="C?"  Part="1" 
+AR Path="/5F259F7D/5E61F573" Ref="C213"  Part="1" 
+F 0 "C213" H 3100 1450 50  0000 L CNN
+F 1 "1u" H 3100 1350 50  0000 L CNN
+F 2 "Capacitor-Chip:C_CHIP_1608_Reflow" H 3100 1300 50  0001 C CNN
+F 3 "" H 3025 1500 50  0001 C CNN
+F 4 "GRM188R61E105KA12D" H 3000 1400 50  0001 C CNN "PartName"
+	1    3000 1400
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 1600 3200 1600
+Wire Wire Line
+	3200 1600 3200 1500
+Wire Wire Line
+	3200 1200 3400 1200
+Wire Wire Line
+	3400 1300 3200 1300
+Connection ~ 3200 1300
+Wire Wire Line
+	3200 1300 3200 1200
+Wire Wire Line
+	3200 1400 3400 1400
+Connection ~ 3200 1400
+Wire Wire Line
+	3200 1400 3200 1300
+Wire Wire Line
+	3400 1500 3200 1500
+Connection ~ 3200 1500
+Wire Wire Line
+	3200 1500 3200 1400
+Wire Wire Line
+	3200 1200 3000 1200
+Connection ~ 3200 1200
+$Comp
+L passive:C C?
+U 1 1 5E61F587
+P 2600 1400
+AR Path="/5EFFEFDE/5F019185/5E61F587" Ref="C?"  Part="1" 
+AR Path="/5F062C46/5E61F587" Ref="C?"  Part="1" 
+AR Path="/5F235A43/5E61F587" Ref="C?"  Part="1" 
+AR Path="/5F237486/5E61F587" Ref="C?"  Part="1" 
+AR Path="/5F259EEE/5E61F587" Ref="C?"  Part="1" 
+AR Path="/5F259F7D/5E61F587" Ref="C212"  Part="1" 
+F 0 "C212" H 2700 1450 50  0000 L CNN
+F 1 "1u" H 2700 1350 50  0000 L CNN
+F 2 "Capacitor-Chip:C_CHIP_1608_Reflow" H 2700 1300 50  0001 C CNN
+F 3 "" H 2625 1500 50  0001 C CNN
+F 4 "GRM188R61E105KA12D" H 2600 1400 50  0001 C CNN "PartName"
+	1    2600 1400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L passive:C C?
+U 1 1 5E61F58D
+P 2200 1400
+AR Path="/5EFFEFDE/5F019185/5E61F58D" Ref="C?"  Part="1" 
+AR Path="/5F062C46/5E61F58D" Ref="C?"  Part="1" 
+AR Path="/5F235A43/5E61F58D" Ref="C?"  Part="1" 
+AR Path="/5F237486/5E61F58D" Ref="C?"  Part="1" 
+AR Path="/5F259EEE/5E61F58D" Ref="C?"  Part="1" 
+AR Path="/5F259F7D/5E61F58D" Ref="C211"  Part="1" 
+F 0 "C211" H 2300 1450 50  0000 L CNN
+F 1 "1u" H 2300 1350 50  0000 L CNN
+F 2 "Capacitor-Chip:C_CHIP_1608_Reflow" H 2300 1300 50  0001 C CNN
+F 3 "" H 2225 1500 50  0001 C CNN
+F 4 "GRM188R61E105KA12D" H 2200 1400 50  0001 C CNN "PartName"
+	1    2200 1400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L passive:C C?
+U 1 1 5E61F593
+P 1800 1400
+AR Path="/5EFFEFDE/5F019185/5E61F593" Ref="C?"  Part="1" 
+AR Path="/5F062C46/5E61F593" Ref="C?"  Part="1" 
+AR Path="/5F235A43/5E61F593" Ref="C?"  Part="1" 
+AR Path="/5F237486/5E61F593" Ref="C?"  Part="1" 
+AR Path="/5F259EEE/5E61F593" Ref="C?"  Part="1" 
+AR Path="/5F259F7D/5E61F593" Ref="C208"  Part="1" 
+F 0 "C208" H 1900 1450 50  0000 L CNN
+F 1 "1u" H 1900 1350 50  0000 L CNN
+F 2 "Capacitor-Chip:C_CHIP_1608_Reflow" H 1900 1300 50  0001 C CNN
+F 3 "" H 1825 1500 50  0001 C CNN
+F 4 "GRM188R61E105KA12D" H 1800 1400 50  0001 C CNN "PartName"
+	1    1800 1400
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 1200 1800 1300
+Connection ~ 1800 1200
+Wire Wire Line
+	2200 1300 2200 1200
+Connection ~ 2200 1200
+Wire Wire Line
+	2200 1200 1800 1200
+Wire Wire Line
+	2600 1300 2600 1200
+Connection ~ 2600 1200
+Wire Wire Line
+	2600 1200 2200 1200
+Wire Wire Line
+	3000 1300 3000 1200
+Connection ~ 3000 1200
+Wire Wire Line
+	3000 1200 2600 1200
+$Comp
+L supply-alias:GND #PWR?
+U 1 1 5E61F5A4
+P 3200 2100
+AR Path="/5EFFEFDE/5F019185/5E61F5A4" Ref="#PWR?"  Part="1" 
+AR Path="/5F062C46/5E61F5A4" Ref="#PWR?"  Part="1" 
+AR Path="/5F235A43/5E61F5A4" Ref="#PWR?"  Part="1" 
+AR Path="/5F237486/5E61F5A4" Ref="#PWR?"  Part="1" 
+AR Path="/5F259EEE/5E61F5A4" Ref="#PWR?"  Part="1" 
+AR Path="/5F259F7D/5E61F5A4" Ref="#PWR0411"  Part="1" 
+F 0 "#PWR0411" H 3200 1850 50  0001 C CNN
+F 1 "GND" H 3200 1950 50  0000 C CNN
+F 2 "" H 3200 2100 50  0001 C CNN
+F 3 "" H 3200 2100 50  0001 C CNN
+	1    3200 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 2100 3200 2000
+Wire Wire Line
+	3200 1800 3400 1800
+Wire Wire Line
+	3400 1900 3200 1900
+Connection ~ 3200 1900
+Wire Wire Line
+	3200 1900 3200 1800
+Wire Wire Line
+	3200 2000 3400 2000
+Connection ~ 3200 2000
+Wire Wire Line
+	3200 2000 3200 1900
+Wire Wire Line
+	3400 2100 3200 2100
+Connection ~ 3200 2100
+$Comp
+L passive:C C?
+U 1 1 5E61F5B4
+P 3200 2600
+AR Path="/5EFFEFDE/5F019185/5E61F5B4" Ref="C?"  Part="1" 
+AR Path="/5F062C46/5E61F5B4" Ref="C?"  Part="1" 
+AR Path="/5F235A43/5E61F5B4" Ref="C?"  Part="1" 
+AR Path="/5F237486/5E61F5B4" Ref="C?"  Part="1" 
+AR Path="/5F259EEE/5E61F5B4" Ref="C?"  Part="1" 
+AR Path="/5F259F7D/5E61F5B4" Ref="C214"  Part="1" 
+F 0 "C214" H 3300 2650 50  0000 L CNN
+F 1 "100n" H 3300 2550 50  0000 L CNN
+F 2 "Capacitor-Chip:C_CHIP_1005_Hand_NoSilk" H 3300 2500 50  0001 C CNN
+F 3 "" H 3225 2700 50  0001 C CNN
+F 4 "GRM155R71H104ME14D" H 3200 2600 50  0001 C CNN "PartName"
+	1    3200 2600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 2400 3200 2400
+Wire Wire Line
+	3200 2400 3200 2500
+Wire Wire Line
+	3400 2800 3200 2800
+Wire Wire Line
+	3200 2800 3200 2700
+Connection ~ 3200 2800
+Wire Wire Line
+	2700 2800 2700 2100
+Wire Wire Line
+	2700 2800 3200 2800
+$Comp
+L supply-alias:GND #PWR?
+U 1 1 5E61F5C1
+P 3000 1500
+AR Path="/5EFFEFDE/5F019185/5E61F5C1" Ref="#PWR?"  Part="1" 
+AR Path="/5F062C46/5E61F5C1" Ref="#PWR?"  Part="1" 
+AR Path="/5F235A43/5E61F5C1" Ref="#PWR?"  Part="1" 
+AR Path="/5F237486/5E61F5C1" Ref="#PWR?"  Part="1" 
+AR Path="/5F259EEE/5E61F5C1" Ref="#PWR?"  Part="1" 
+AR Path="/5F259F7D/5E61F5C1" Ref="#PWR0410"  Part="1" 
+F 0 "#PWR0410" H 3000 1250 50  0001 C CNN
+F 1 "GND" H 3000 1350 50  0000 C CNN
+F 2 "" H 3000 1500 50  0001 C CNN
+F 3 "" H 3000 1500 50  0001 C CNN
+	1    3000 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L supply-alias:GND #PWR?
+U 1 1 5E61F5C7
+P 2600 1500
+AR Path="/5EFFEFDE/5F019185/5E61F5C7" Ref="#PWR?"  Part="1" 
+AR Path="/5F062C46/5E61F5C7" Ref="#PWR?"  Part="1" 
+AR Path="/5F235A43/5E61F5C7" Ref="#PWR?"  Part="1" 
+AR Path="/5F237486/5E61F5C7" Ref="#PWR?"  Part="1" 
+AR Path="/5F259EEE/5E61F5C7" Ref="#PWR?"  Part="1" 
+AR Path="/5F259F7D/5E61F5C7" Ref="#PWR0409"  Part="1" 
+F 0 "#PWR0409" H 2600 1250 50  0001 C CNN
+F 1 "GND" H 2600 1350 50  0000 C CNN
+F 2 "" H 2600 1500 50  0001 C CNN
+F 3 "" H 2600 1500 50  0001 C CNN
+	1    2600 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L supply-alias:GND #PWR?
+U 1 1 5E61F5CD
+P 2200 1500
+AR Path="/5EFFEFDE/5F019185/5E61F5CD" Ref="#PWR?"  Part="1" 
+AR Path="/5F062C46/5E61F5CD" Ref="#PWR?"  Part="1" 
+AR Path="/5F235A43/5E61F5CD" Ref="#PWR?"  Part="1" 
+AR Path="/5F237486/5E61F5CD" Ref="#PWR?"  Part="1" 
+AR Path="/5F259EEE/5E61F5CD" Ref="#PWR?"  Part="1" 
+AR Path="/5F259F7D/5E61F5CD" Ref="#PWR0408"  Part="1" 
+F 0 "#PWR0408" H 2200 1250 50  0001 C CNN
+F 1 "GND" H 2200 1350 50  0000 C CNN
+F 2 "" H 2200 1500 50  0001 C CNN
+F 3 "" H 2200 1500 50  0001 C CNN
+	1    2200 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L supply-alias:GND #PWR?
+U 1 1 5E61F5D3
+P 1800 1500
+AR Path="/5EFFEFDE/5F019185/5E61F5D3" Ref="#PWR?"  Part="1" 
+AR Path="/5F062C46/5E61F5D3" Ref="#PWR?"  Part="1" 
+AR Path="/5F235A43/5E61F5D3" Ref="#PWR?"  Part="1" 
+AR Path="/5F237486/5E61F5D3" Ref="#PWR?"  Part="1" 
+AR Path="/5F259EEE/5E61F5D3" Ref="#PWR?"  Part="1" 
+AR Path="/5F259F7D/5E61F5D3" Ref="#PWR0402"  Part="1" 
+F 0 "#PWR0402" H 1800 1250 50  0001 C CNN
+F 1 "GND" H 1800 1350 50  0000 C CNN
+F 2 "" H 1800 1500 50  0001 C CNN
+F 3 "" H 1800 1500 50  0001 C CNN
+	1    1800 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L passive:R R?
+U 1 1 5E61F5D9
+P 2900 2100
+AR Path="/5EFFEFDE/5F019185/5E61F5D9" Ref="R?"  Part="1" 
+AR Path="/5F062C46/5E61F5D9" Ref="R?"  Part="1" 
+AR Path="/5F235A43/5E61F5D9" Ref="R?"  Part="1" 
+AR Path="/5F237486/5E61F5D9" Ref="R?"  Part="1" 
+AR Path="/5F259EEE/5E61F5D9" Ref="R?"  Part="1" 
+AR Path="/5F259F7D/5E61F5D9" Ref="R122"  Part="1" 
+F 0 "R122" V 2705 2100 50  0000 C CNN
+F 1 "1" V 2796 2100 50  0000 C CNN
+F 2 "Resistor-Chip:R_CHIP_1005_Hand_NoSilk" V 2950 2000 50  0001 C CNN
+F 3 "" H 2950 2200 50  0001 C CNN
+F 4 "RK73B1ETTP1R0J" H 2900 2100 50  0001 C CNN "PartName"
+F 5 "P板" H 2900 2100 50  0001 C CNN "Supplier"
+	1    2900 2100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3000 2100 3200 2100
+Wire Wire Line
+	2700 2100 2800 2100
+Wire Wire Line
+	3200 2400 2800 2400
+Connection ~ 3200 2400
+$Comp
+L passive:R R?
+U 1 1 5E61F5E3
+P 3100 4500
+AR Path="/5EFFEFDE/5F019185/5E61F5E3" Ref="R?"  Part="1" 
+AR Path="/5F062C46/5E61F5E3" Ref="R?"  Part="1" 
+AR Path="/5F235A43/5E61F5E3" Ref="R?"  Part="1" 
+AR Path="/5F237486/5E61F5E3" Ref="R?"  Part="1" 
+AR Path="/5F259EEE/5E61F5E3" Ref="R?"  Part="1" 
+AR Path="/5F259F7D/5E61F5E3" Ref="R123"  Part="1" 
+F 0 "R123" V 3203 4500 50  0000 C CNN
+F 1 "43k" V 3294 4500 50  0000 C CNN
+F 2 "Resistor-Chip:R_CHIP_1005_Hand_NoSilk" V 3150 4400 50  0001 C CNN
+F 3 "" H 3150 4600 50  0001 C CNN
+F 4 "RK73H1ETTP4302F" H 3100 4500 50  0001 C CNN "PartName"
+F 5 "P板" H 3100 4500 50  0001 C CNN "Supplier"
+	1    3100 4500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3200 4500 3400 4500
+Wire Wire Line
+	3000 4500 2700 4500
+Wire Wire Line
+	2700 4500 2700 4200
+Connection ~ 2700 2800
+Wire Wire Line
+	2800 2400 2800 4300
+Wire Wire Line
+	3400 4300 2800 4300
+Wire Wire Line
+	3400 4200 2700 4200
+Connection ~ 2700 4200
+Wire Wire Line
+	2700 4200 2700 4100
+Wire Wire Line
+	3400 4100 2700 4100
+Connection ~ 2700 4100
+Wire Wire Line
+	2700 4100 2700 2800
+$Comp
+L passive:R R?
+U 1 1 5E61F5F8
+P 6000 4500
+AR Path="/5EFFEFDE/5F019185/5E61F5F8" Ref="R?"  Part="1" 
+AR Path="/5F062C46/5E61F5F8" Ref="R?"  Part="1" 
+AR Path="/5F235A43/5E61F5F8" Ref="R?"  Part="1" 
+AR Path="/5F237486/5E61F5F8" Ref="R?"  Part="1" 
+AR Path="/5F259EEE/5E61F5F8" Ref="R?"  Part="1" 
+AR Path="/5F259F7D/5E61F5F8" Ref="R126"  Part="1" 
+F 0 "R126" V 5900 4500 50  0000 C CNN
+F 1 "2m" V 6100 4500 50  0000 C CNN
+F 2 "Resistor-Chip:R_CHIP_3216_Reflow" V 6050 4400 50  0001 C CNN
+F 3 "" H 6050 4600 50  0001 C CNN
+F 4 "PMR18EZPJV2L0" H 6000 4500 50  0001 C CNN "PartName"
+	1    6000 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L passive:R R?
+U 1 1 5E61F605
+P 6000 3300
+AR Path="/5EFFEFDE/5F019185/5E61F605" Ref="R?"  Part="1" 
+AR Path="/5F062C46/5E61F605" Ref="R?"  Part="1" 
+AR Path="/5F235A43/5E61F605" Ref="R?"  Part="1" 
+AR Path="/5F237486/5E61F605" Ref="R?"  Part="1" 
+AR Path="/5F259EEE/5E61F605" Ref="R?"  Part="1" 
+AR Path="/5F259F7D/5E61F605" Ref="R125"  Part="1" 
+F 0 "R125" V 5900 3300 50  0000 C CNN
+F 1 "2m" V 6100 3300 50  0000 C CNN
+F 2 "Resistor-Chip:R_CHIP_3216_Reflow" V 6050 3200 50  0001 C CNN
+F 3 "" H 6050 3400 50  0001 C CNN
+F 4 "PMR18EZPJV2L0" H 6000 3300 50  0001 C CNN "PartName"
+	1    6000 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L passive:L_Ferrite L?
+U 1 1 5E61F60C
+P 6500 2100
+AR Path="/5F062C46/5E61F60C" Ref="L?"  Part="1" 
+AR Path="/5F235A43/5E61F60C" Ref="L?"  Part="1" 
+AR Path="/5F237486/5E61F60C" Ref="L?"  Part="1" 
+AR Path="/5F259EEE/5E61F60C" Ref="L?"  Part="1" 
+AR Path="/5F259F7D/5E61F60C" Ref="L22"  Part="1" 
+F 0 "L22" V 6735 2100 50  0000 C CNN
+F 1 "30" V 6644 2100 50  0000 C CNN
+F 2 "Inductor-Chip:L_CHIP_2012_Reflow" H 6600 2000 50  0001 C CNN
+F 3 "" H 6525 2100 50  0001 C CNN
+F 4 "BLM21SN300SZ1D" H 6500 2100 50  0001 C CNN "PartName"
+	1    6500 2100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L passive:L_Ferrite L?
+U 1 1 5E61F613
+P 6500 3300
+AR Path="/5F062C46/5E61F613" Ref="L?"  Part="1" 
+AR Path="/5F235A43/5E61F613" Ref="L?"  Part="1" 
+AR Path="/5F237486/5E61F613" Ref="L?"  Part="1" 
+AR Path="/5F259EEE/5E61F613" Ref="L?"  Part="1" 
+AR Path="/5F259F7D/5E61F613" Ref="L23"  Part="1" 
+F 0 "L23" V 6735 3300 50  0000 C CNN
+F 1 "30" V 6644 3300 50  0000 C CNN
+F 2 "Inductor-Chip:L_CHIP_2012_Reflow" H 6600 3200 50  0001 C CNN
+F 3 "" H 6525 3300 50  0001 C CNN
+F 4 "BLM21SN300SZ1D" H 6500 3300 50  0001 C CNN "PartName"
+	1    6500 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L passive:L_Ferrite L?
+U 1 1 5E61F61A
+P 6500 4500
+AR Path="/5F062C46/5E61F61A" Ref="L?"  Part="1" 
+AR Path="/5F235A43/5E61F61A" Ref="L?"  Part="1" 
+AR Path="/5F237486/5E61F61A" Ref="L?"  Part="1" 
+AR Path="/5F259EEE/5E61F61A" Ref="L?"  Part="1" 
+AR Path="/5F259F7D/5E61F61A" Ref="L24"  Part="1" 
+F 0 "L24" V 6735 4500 50  0000 C CNN
+F 1 "30" V 6644 4500 50  0000 C CNN
+F 2 "Inductor-Chip:L_CHIP_2012_Reflow" H 6600 4400 50  0001 C CNN
+F 3 "" H 6525 4500 50  0001 C CNN
+F 4 "BLM21SN300SZ1D" H 6500 4500 50  0001 C CNN "PartName"
+	1    6500 4500
+	0    -1   -1   0   
+$EndComp
+Text Label 5200 2100 0    50   ~ 0
+OUT_A
+Text Label 5200 3300 0    50   ~ 0
+OUT_B
+Text Label 5200 4500 0    50   ~ 0
+OUT_C
+Wire Wire Line
+	4800 2100 6400 2100
+$Comp
+L passive:CE_Polarity C?
+U 1 1 5EF745FB
+P 5200 1400
+AR Path="/5F235A43/5EF745FB" Ref="C?"  Part="1" 
+AR Path="/5F259F7D/5EF745FB" Ref="C221"  Part="1" 
+F 0 "C221" H 5300 1450 50  0000 L CNN
+F 1 "100u" H 5300 1350 50  0000 L CNN
+F 2 "Phoenix:C_RADIAL_10.0_P5.0_D0.6" H 5300 1300 50  0001 C CNN
+F 3 "" H 5225 1500 50  0001 C CNN
+F 4 "URS1J101MPD1TD" H 5200 1400 50  0001 C CNN "PartName"
+	1    5200 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 1200 5200 1200
+Wire Wire Line
+	5200 1200 5200 1300
+Wire Wire Line
+	4800 1600 5200 1600
+Wire Wire Line
+	5200 1600 5200 1500
+Wire Wire Line
+	6100 3300 6200 3300
+Wire Wire Line
+	6100 4500 6200 4500
+Wire Wire Line
+	8300 3200 8400 3200
+$Comp
+L passive:C C?
+U 1 1 5F1F5E78
+P 8000 1300
+AR Path="/5F235278/5F1F5E78" Ref="C?"  Part="1" 
+AR Path="/5F235A43/5F1F5E78" Ref="C?"  Part="1" 
+AR Path="/5F259EEE/5F1F5E78" Ref="C?"  Part="1" 
+AR Path="/5F259F40/5F1F5E78" Ref="C?"  Part="1" 
+AR Path="/5F259F7D/5F1F5E78" Ref="C224"  Part="1" 
+F 0 "C224" H 8100 1350 50  0000 L CNN
+F 1 "1u" H 8100 1250 50  0000 L CNN
+F 2 "Capacitor-Chip:C_CHIP_1005_Hand_NoSilk" H 8100 1200 50  0001 C CNN
+F 3 "" H 8025 1400 50  0001 C CNN
+F 4 "C1005X5R1V105K050BE" H 8000 1300 50  0001 C CNN "PartName"
+	1    8000 1300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L supply-alias:GND #PWR?
+U 1 1 5F1F5E7E
+P 8000 1400
+AR Path="/5F1F5E7E" Ref="#PWR?"  Part="1" 
+AR Path="/5F235278/5F1F5E7E" Ref="#PWR?"  Part="1" 
+AR Path="/5F235A43/5F1F5E7E" Ref="#PWR?"  Part="1" 
+AR Path="/5F259EEE/5F1F5E7E" Ref="#PWR?"  Part="1" 
+AR Path="/5F259F40/5F1F5E7E" Ref="#PWR?"  Part="1" 
+AR Path="/5F259F7D/5F1F5E7E" Ref="#PWR0422"  Part="1" 
+F 0 "#PWR0422" H 8000 1150 50  0001 C CNN
+F 1 "GND" H 8000 1250 50  0000 C CNN
+F 2 "" H 8000 1400 50  0001 C CNN
+F 3 "" H 8000 1400 50  0001 C CNN
+	1    8000 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L supply-alias:GND #PWR?
+U 1 1 5F1F5E84
+P 8400 4600
+AR Path="/5F1F5E84" Ref="#PWR?"  Part="1" 
+AR Path="/5F235278/5F1F5E84" Ref="#PWR?"  Part="1" 
+AR Path="/5F235A43/5F1F5E84" Ref="#PWR?"  Part="1" 
+AR Path="/5F259EEE/5F1F5E84" Ref="#PWR?"  Part="1" 
+AR Path="/5F259F40/5F1F5E84" Ref="#PWR?"  Part="1" 
+AR Path="/5F259F7D/5F1F5E84" Ref="#PWR0424"  Part="1" 
+F 0 "#PWR0424" H 8400 4350 50  0001 C CNN
+F 1 "GND" H 8400 4450 50  0000 C CNN
+F 2 "" H 8400 4600 50  0001 C CNN
+F 3 "" H 8400 4600 50  0001 C CNN
+	1    8400 4600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 4500 8600 4500
+Wire Wire Line
+	7600 3500 7800 3500
+$Comp
+L Connector_Generic:Conn_02x04_Top_Bottom J?
+U 1 1 5F1F5E8C
+P 8100 3300
+AR Path="/5F1F5E8C" Ref="J?"  Part="1" 
+AR Path="/5EFFEFDE/5F1F5E8C" Ref="J?"  Part="1" 
+AR Path="/5F235278/5F1F5E8C" Ref="J?"  Part="1" 
+AR Path="/5F235A43/5F1F5E8C" Ref="J?"  Part="1" 
+AR Path="/5F259EEE/5F1F5E8C" Ref="J?"  Part="1" 
+AR Path="/5F259F40/5F1F5E8C" Ref="J?"  Part="1" 
+AR Path="/5F259F7D/5F1F5E8C" Ref="J24"  Part="1" 
+F 0 "J24" H 8150 3500 50  0000 C CNN
+F 1 "43045-0802" H 8150 3000 50  0000 C CNN
+F 2 "Connector-Molex:43045-080x" H 8150 3300 50  0001 C CNN
+F 3 "" H 8100 3400 50  0001 C CNN
+F 4 "43045-0802" H 8100 3300 50  0001 C CNN "PartName"
+	1    8100 3300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L supply-value:+5V #PWR?
+U 1 1 5F1F5E92
+P 9200 1200
+AR Path="/5F235278/5F1F5E92" Ref="#PWR?"  Part="1" 
+AR Path="/5F235A43/5F1F5E92" Ref="#PWR?"  Part="1" 
+AR Path="/5F259EEE/5F1F5E92" Ref="#PWR?"  Part="1" 
+AR Path="/5F259F40/5F1F5E92" Ref="#PWR?"  Part="1" 
+AR Path="/5F259F7D/5F1F5E92" Ref="#PWR0425"  Part="1" 
+F 0 "#PWR0425" H 9200 1050 50  0001 C CNN
+F 1 "+5V" H 9200 1340 50  0000 C CNN
+F 2 "" H 9200 1200 50  0001 C CNN
+F 3 "" H 9200 1200 50  0001 C CNN
+	1    9200 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L diode:D_Zener D?
+U 1 1 5F1F5E98
+P 8000 2600
+AR Path="/5F235278/5F1F5E98" Ref="D?"  Part="1" 
+AR Path="/5F235A43/5F1F5E98" Ref="D?"  Part="1" 
+AR Path="/5F259EEE/5F1F5E98" Ref="D?"  Part="1" 
+AR Path="/5F259F40/5F1F5E98" Ref="D?"  Part="1" 
+AR Path="/5F259F7D/5F1F5E98" Ref="D18"  Part="1" 
+F 0 "D18" V 7900 2700 50  0000 L CNN
+F 1 "DNP(SMAJ5.0)" V 8000 2700 50  0000 L CNN
+F 2 "Diode-Chip:D_SMA(DO-214AC)" H 8040 2600 50  0001 C CNN
+F 3 "" H 8040 2600 50  0001 C CNN
+F 4 "SMAJ5.0" H 8000 2600 50  0001 C CNN "PartName"
+F 5 "None" H 8000 2600 50  0001 C CNN "Supplier"
+	1    8000 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L supply-alias:GND #PWR?
+U 1 1 5F1F5E9E
+P 8000 2700
+AR Path="/5F1F5E9E" Ref="#PWR?"  Part="1" 
+AR Path="/5F235278/5F1F5E9E" Ref="#PWR?"  Part="1" 
+AR Path="/5F235A43/5F1F5E9E" Ref="#PWR?"  Part="1" 
+AR Path="/5F259EEE/5F1F5E9E" Ref="#PWR?"  Part="1" 
+AR Path="/5F259F40/5F1F5E9E" Ref="#PWR?"  Part="1" 
+AR Path="/5F259F7D/5F1F5E9E" Ref="#PWR0423"  Part="1" 
+F 0 "#PWR0423" H 8000 2450 50  0001 C CNN
+F 1 "GND" H 8000 2550 50  0000 C CNN
+F 2 "" H 8000 2700 50  0001 C CNN
+F 3 "" H 8000 2700 50  0001 C CNN
+	1    8000 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-microchip:MIC209x U?
+U 1 1 5F1F5EA4
+P 8600 1400
+AR Path="/5F5738E6/5F1F5EA4" Ref="U?"  Part="1" 
+AR Path="/5F235278/5F1F5EA4" Ref="U?"  Part="1" 
+AR Path="/5F235A43/5F1F5EA4" Ref="U?"  Part="1" 
+AR Path="/5F259EEE/5F1F5EA4" Ref="U?"  Part="1" 
+AR Path="/5F259F40/5F1F5EA4" Ref="U?"  Part="1" 
+AR Path="/5F259F7D/5F1F5EA4" Ref="U52"  Part="1" 
+F 0 "U52" H 8600 1750 50  0000 C CNN
+F 1 "MIC2090-2YM5-TR" H 8600 1050 50  0000 C CNN
+F 2 "IC-SOT:SOT23-5" H 8600 1400 50  0001 C CNN
+F 3 "" H 8600 1400 50  0001 C CNN
+F 4 "MIC2090-2YM5-TR" H 8600 1400 50  0001 C CNN "PartName"
+	1    8600 1400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L supply-alias:GND #PWR?
+U 1 1 5F1F5EB0
+P 9200 1400
+AR Path="/5F1F5EB0" Ref="#PWR?"  Part="1" 
+AR Path="/5F235278/5F1F5EB0" Ref="#PWR?"  Part="1" 
+AR Path="/5F235A43/5F1F5EB0" Ref="#PWR?"  Part="1" 
+AR Path="/5F259EEE/5F1F5EB0" Ref="#PWR?"  Part="1" 
+AR Path="/5F259F40/5F1F5EB0" Ref="#PWR?"  Part="1" 
+AR Path="/5F259F7D/5F1F5EB0" Ref="#PWR0426"  Part="1" 
+F 0 "#PWR0426" H 9200 1150 50  0001 C CNN
+F 1 "GND" H 9200 1250 50  0000 C CNN
+F 2 "" H 9200 1400 50  0001 C CNN
+F 3 "" H 9200 1400 50  0001 C CNN
+	1    9200 1400
+	1    0    0    -1  
+$EndComp
+Text HLabel 9400 1600 2    50   Input ~ 0
+SW_EN
+Wire Wire Line
+	8400 3200 8400 4300
+Wire Wire Line
+	8400 4300 8300 4300
+Connection ~ 8400 4300
+Wire Wire Line
+	8400 4300 8400 4600
+Text HLabel 9400 2200 2    50   Output ~ 0
+~SW_FLT
+$Comp
+L passive:R_Array_4 RA?
+U 2 1 5F1F5EC2
+P 8700 2800
+AR Path="/5E4B5B3E/5F1F5EC2" Ref="RA?"  Part="3" 
+AR Path="/5E4B5786/5F1F5EC2" Ref="RA?"  Part="3" 
+AR Path="/5F235278/5F1F5EC2" Ref="RA?"  Part="2" 
+AR Path="/5F235A43/5F1F5EC2" Ref="RA?"  Part="2" 
+AR Path="/5F259EEE/5F1F5EC2" Ref="RA?"  Part="2" 
+AR Path="/5F259F40/5F1F5EC2" Ref="RA?"  Part="2" 
+AR Path="/5F259F7D/5F1F5EC2" Ref="RA28"  Part="2" 
+F 0 "RA28" V 8650 2650 50  0000 R CNN
+F 1 "100k" V 8650 2950 50  0000 L CNN
+F 2 "Resistor-Chip:R_CHIP_4x1005_CONCAVE" H 8700 2800 50  0001 C CNN
+F 3 "" H 8700 2800 50  0001 C CNN
+F 4 "EXB-N8V104JX" H 8700 2800 50  0001 C CNN "PartName"
+	2    8700 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L passive:R_Array_4 RA?
+U 1 1 5F1F5EC8
+P 9300 2800
+AR Path="/5E4B5B3E/5F1F5EC8" Ref="RA?"  Part="4" 
+AR Path="/5E4B5786/5F1F5EC8" Ref="RA?"  Part="4" 
+AR Path="/5F235278/5F1F5EC8" Ref="RA?"  Part="1" 
+AR Path="/5F235A43/5F1F5EC8" Ref="RA?"  Part="1" 
+AR Path="/5F259EEE/5F1F5EC8" Ref="RA?"  Part="1" 
+AR Path="/5F259F40/5F1F5EC8" Ref="RA?"  Part="1" 
+AR Path="/5F259F7D/5F1F5EC8" Ref="RA28"  Part="1" 
+F 0 "RA28" V 9250 2650 50  0000 R CNN
+F 1 "100k" V 9250 2950 50  0000 L CNN
+F 2 "Resistor-Chip:R_CHIP_4x1005_CONCAVE" H 9300 2800 50  0001 C CNN
+F 3 "" H 9300 2800 50  0001 C CNN
+F 4 "EXB-N8V104JX" H 9300 2800 50  0001 C CNN "PartName"
+	1    9300 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 5F1F5ECE
+P 8100 4300
+AR Path="/5F1F5ECE" Ref="J?"  Part="1" 
+AR Path="/5EFFEFDE/5F1F5ECE" Ref="J?"  Part="1" 
+AR Path="/5F235278/5F1F5ECE" Ref="J?"  Part="1" 
+AR Path="/5F235A43/5F1F5ECE" Ref="J?"  Part="1" 
+AR Path="/5F259EEE/5F1F5ECE" Ref="J?"  Part="1" 
+AR Path="/5F259F40/5F1F5ECE" Ref="J?"  Part="1" 
+AR Path="/5F259F7D/5F1F5ECE" Ref="J25"  Part="1" 
+F 0 "J25" H 8100 4500 50  0000 C CNN
+F 1 "53426-0410" H 8100 4000 50  0000 C CNN
+F 2 "Connector-Molex:53426-0410" H 8100 4300 50  0001 C CNN
+F 3 "" H 8100 4300 50  0001 C CNN
+F 4 "53426-0410" H 8100 4300 50  0001 C CNN "PartName"
+	1    8100 4300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L passive:R_Array_4 RA?
+U 2 1 5F1F5ED4
+P 10000 3400
+AR Path="/5E4B5B3E/5F1F5ED4" Ref="RA?"  Part="3" 
+AR Path="/5E4B5786/5F1F5ED4" Ref="RA?"  Part="3" 
+AR Path="/5F235278/5F1F5ED4" Ref="RA?"  Part="3" 
+AR Path="/5F235A43/5F1F5ED4" Ref="RA?"  Part="2" 
+AR Path="/5F259EEE/5F1F5ED4" Ref="RA?"  Part="2" 
+AR Path="/5F259F40/5F1F5ED4" Ref="RA?"  Part="2" 
+AR Path="/5F259F7D/5F1F5ED4" Ref="RA29"  Part="2" 
+F 0 "RA29" V 9950 3250 50  0000 R CNN
+F 1 "51" V 9950 3550 50  0000 L CNN
+F 2 "Resistor-Chip:R_CHIP_4x1005_CONCAVE" H 10000 3400 50  0001 C CNN
+F 3 "" H 10000 3400 50  0001 C CNN
+F 4 "EXB-N8V510JX" H 10000 3400 50  0001 C CNN "PartName"
+	2    10000 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L passive:R_Array_4 RA?
+U 3 1 5F1F5EDA
+P 10000 3500
+AR Path="/5E4B5B3E/5F1F5EDA" Ref="RA?"  Part="4" 
+AR Path="/5E4B5786/5F1F5EDA" Ref="RA?"  Part="4" 
+AR Path="/5F235278/5F1F5EDA" Ref="RA?"  Part="2" 
+AR Path="/5F235A43/5F1F5EDA" Ref="RA?"  Part="3" 
+AR Path="/5F259EEE/5F1F5EDA" Ref="RA?"  Part="3" 
+AR Path="/5F259F40/5F1F5EDA" Ref="RA?"  Part="3" 
+AR Path="/5F259F7D/5F1F5EDA" Ref="RA29"  Part="3" 
+F 0 "RA29" V 9950 3350 50  0000 R CNN
+F 1 "51" V 9950 3650 50  0000 L CNN
+F 2 "Resistor-Chip:R_CHIP_4x1005_CONCAVE" H 10000 3500 50  0001 C CNN
+F 3 "" H 10000 3500 50  0001 C CNN
+F 4 "EXB-N8V510JX" H 10000 3500 50  0001 C CNN "PartName"
+	3    10000 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L passive:R_Array_4 RA?
+U 1 1 5F1F5EE0
+P 10000 3300
+AR Path="/5E4B5B3E/5F1F5EE0" Ref="RA?"  Part="2" 
+AR Path="/5E4B5786/5F1F5EE0" Ref="RA?"  Part="2" 
+AR Path="/5F235278/5F1F5EE0" Ref="RA?"  Part="4" 
+AR Path="/5F235A43/5F1F5EE0" Ref="RA?"  Part="1" 
+AR Path="/5F259EEE/5F1F5EE0" Ref="RA?"  Part="1" 
+AR Path="/5F259F40/5F1F5EE0" Ref="RA?"  Part="1" 
+AR Path="/5F259F7D/5F1F5EE0" Ref="RA29"  Part="1" 
+F 0 "RA29" V 9950 3150 50  0000 R CNN
+F 1 "51" V 9950 3450 50  0000 L CNN
+F 2 "Resistor-Chip:R_CHIP_4x1005_CONCAVE" H 10000 3300 50  0001 C CNN
+F 3 "" H 10000 3300 50  0001 C CNN
+F 4 "EXB-N8V510JX" H 10000 3300 50  0001 C CNN "PartName"
+	1    10000 3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10100 3500 10500 3500
+Wire Wire Line
+	10100 3400 10500 3400
+Wire Wire Line
+	10100 3300 10500 3300
+Wire Wire Line
+	8300 3500 8700 3500
+Connection ~ 8700 3500
+Wire Wire Line
+	8700 3500 9900 3500
+Connection ~ 9100 3300
+Wire Wire Line
+	9100 3300 9900 3300
+Connection ~ 8900 3400
+Wire Wire Line
+	8900 3400 9900 3400
+Wire Wire Line
+	8300 3400 8900 3400
+$Comp
+L passive:R_Array_4 RA?
+U 3 1 5F1F5EF1
+P 8900 2800
+AR Path="/5E4B5B3E/5F1F5EF1" Ref="RA?"  Part="2" 
+AR Path="/5E4B5786/5F1F5EF1" Ref="RA?"  Part="2" 
+AR Path="/5F235278/5F1F5EF1" Ref="RA?"  Part="3" 
+AR Path="/5F235A43/5F1F5EF1" Ref="RA?"  Part="3" 
+AR Path="/5F259EEE/5F1F5EF1" Ref="RA?"  Part="3" 
+AR Path="/5F259F40/5F1F5EF1" Ref="RA?"  Part="3" 
+AR Path="/5F259F7D/5F1F5EF1" Ref="RA28"  Part="3" 
+F 0 "RA28" V 8850 2650 50  0000 R CNN
+F 1 "100k" V 8850 2950 50  0000 L CNN
+F 2 "Resistor-Chip:R_CHIP_4x1005_CONCAVE" H 8900 2800 50  0001 C CNN
+F 3 "" H 8900 2800 50  0001 C CNN
+F 4 "EXB-N8V104JX" H 8900 2800 50  0001 C CNN "PartName"
+	3    8900 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L passive:R_Array_4 RA?
+U 4 1 5F1F5EF7
+P 10000 4200
+AR Path="/5E4B5B3E/5F1F5EF7" Ref="RA?"  Part="2" 
+AR Path="/5E4B5786/5F1F5EF7" Ref="RA?"  Part="2" 
+AR Path="/5F235278/5F1F5EF7" Ref="RA?"  Part="1" 
+AR Path="/5F235A43/5F1F5EF7" Ref="RA?"  Part="4" 
+AR Path="/5F259EEE/5F1F5EF7" Ref="RA?"  Part="4" 
+AR Path="/5F259F40/5F1F5EF7" Ref="RA?"  Part="4" 
+AR Path="/5F259F7D/5F1F5EF7" Ref="RA29"  Part="4" 
+F 0 "RA29" V 9950 4050 50  0000 R CNN
+F 1 "51" V 9950 4350 50  0000 L CNN
+F 2 "Resistor-Chip:R_CHIP_4x1005_CONCAVE" H 10000 4200 50  0001 C CNN
+F 3 "" H 10000 4200 50  0001 C CNN
+F 4 "EXB-N8V510JX" H 10000 4200 50  0001 C CNN "PartName"
+	4    10000 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L passive:R_Array_4 RA?
+U 4 1 5F1F5EFD
+P 9100 2800
+AR Path="/5E4B5B3E/5F1F5EFD" Ref="RA?"  Part="1" 
+AR Path="/5E4B5786/5F1F5EFD" Ref="RA?"  Part="1" 
+AR Path="/5F235278/5F1F5EFD" Ref="RA?"  Part="4" 
+AR Path="/5F235A43/5F1F5EFD" Ref="RA?"  Part="4" 
+AR Path="/5F259EEE/5F1F5EFD" Ref="RA?"  Part="4" 
+AR Path="/5F259F40/5F1F5EFD" Ref="RA?"  Part="4" 
+AR Path="/5F259F7D/5F1F5EFD" Ref="RA28"  Part="4" 
+F 0 "RA28" V 9050 2650 50  0000 R CNN
+F 1 "100k" V 9050 2950 50  0000 L CNN
+F 2 "Resistor-Chip:R_CHIP_4x1005_CONCAVE" H 9100 2800 50  0001 C CNN
+F 3 "" H 9100 2800 50  0001 C CNN
+F 4 "EXB-N8V104JX" H 9100 2800 50  0001 C CNN "PartName"
+	4    9100 2800
+	1    0    0    -1  
+$EndComp
+Text HLabel 10500 3300 2    50   Output ~ 0
+~HALL_U_5V
+Text HLabel 10500 3400 2    50   Output ~ 0
+~HALL_V_5V
+Text HLabel 10500 3500 2    50   Output ~ 0
+~HALL_W_5V
+Wire Wire Line
+	6900 3200 6900 4500
+Wire Wire Line
+	8300 4200 9300 4200
+Wire Wire Line
+	8300 4400 9500 4400
+Wire Wire Line
+	9100 2900 9100 3300
+Wire Wire Line
+	8300 3300 9100 3300
+Wire Wire Line
+	8900 2900 8900 3400
+Wire Wire Line
+	8700 3500 8700 2900
+Wire Wire Line
+	7000 3400 7000 2100
+Text HLabel 10500 4200 2    50   Output ~ 0
+ENC_B_5V
+Text HLabel 10500 4400 2    50   Output ~ 0
+ENC_A_5V
+Wire Wire Line
+	7600 3500 7600 3900
+Connection ~ 7600 3500
+Wire Wire Line
+	8600 4500 8600 3900
+Wire Wire Line
+	8600 3900 7600 3900
+Wire Wire Line
+	8000 2400 8000 2500
+Wire Wire Line
+	9200 1200 9000 1200
+Wire Wire Line
+	9000 1400 9200 1400
+Wire Wire Line
+	9400 2200 8000 2200
+Wire Wire Line
+	8000 2200 8000 1600
+Wire Wire Line
+	8000 1600 8200 1600
+Wire Wire Line
+	8200 1200 8000 1200
+Wire Wire Line
+	7600 1200 7600 2400
+Wire Wire Line
+	9300 2700 9300 2400
+Wire Wire Line
+	9300 2400 9100 2400
+Connection ~ 7600 2400
+Wire Wire Line
+	7600 2400 7600 3500
+Wire Wire Line
+	8700 2700 8700 2400
+Connection ~ 8700 2400
+Wire Wire Line
+	8700 2400 8000 2400
+Wire Wire Line
+	8900 2400 8900 2700
+Connection ~ 8900 2400
+Wire Wire Line
+	8900 2400 8700 2400
+Wire Wire Line
+	9100 2700 9100 2400
+Connection ~ 9100 2400
+Wire Wire Line
+	9100 2400 8900 2400
+Connection ~ 8000 1200
+Wire Wire Line
+	8000 1200 7600 1200
+Text Label 7500 3200 2    50   ~ 0
+PHASE_U
+Text Label 7500 3300 2    50   ~ 0
+PHASE_V
+Text Label 7500 3400 2    50   ~ 0
+PHASE_W
+Wire Wire Line
+	7800 3200 6900 3200
+Wire Wire Line
+	7000 3400 7800 3400
+Wire Wire Line
+	6600 2100 7000 2100
+Wire Wire Line
+	6600 3300 7800 3300
+Wire Wire Line
+	6600 4500 6900 4500
+Text HLabel 3100 6500 2    50   Output ~ 0
+CS_B+
+Text HLabel 3100 7000 2    50   Output ~ 0
+CS_B-
+Text HLabel 5600 6500 2    50   Output ~ 0
+CS_C+
+Text HLabel 5600 7000 2    50   Output ~ 0
+CS_C-
+$Comp
+L analog-maxim:MAX40056xAUA U?
+U 1 1 5F4ED90C
+P 2500 6400
+AR Path="/5F062C46/5F4ED90C" Ref="U?"  Part="1" 
+AR Path="/5F235A43/5F4ED90C" Ref="U?"  Part="1" 
+AR Path="/5F237486/5F4ED90C" Ref="U?"  Part="1" 
+AR Path="/5F259F7D/5F4ED90C" Ref="U49"  Part="1" 
+F 0 "U49" H 2500 6850 50  0000 C CNN
+F 1 "MAX40056FAUA+" H 2500 5950 50  0000 C CNN
+F 2 "IC-SOP:MSOP8" H 2500 6400 50  0001 C CNN
+F 3 "" H 2500 6400 50  0001 C CNN
+F 4 "MAX40056FAUA+" H 2500 6400 50  0001 C CNN "PartName"
+	1    2500 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L analog-maxim:MAX40056xAUA U?
+U 1 1 5F4ED912
+P 5000 6400
+AR Path="/5F062C46/5F4ED912" Ref="U?"  Part="1" 
+AR Path="/5F235A43/5F4ED912" Ref="U?"  Part="1" 
+AR Path="/5F237486/5F4ED912" Ref="U?"  Part="1" 
+AR Path="/5F259F7D/5F4ED912" Ref="U51"  Part="1" 
+F 0 "U51" H 5000 6850 50  0000 C CNN
+F 1 "MAX40056FAUA+" H 5000 5950 50  0000 C CNN
+F 2 "IC-SOP:MSOP8" H 5000 6400 50  0001 C CNN
+F 3 "" H 5000 6400 50  0001 C CNN
+F 4 "MAX40056FAUA+" H 5000 6400 50  0001 C CNN "PartName"
+	1    5000 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 6100 3000 6100
+Wire Wire Line
+	2900 6300 3100 6300
+Wire Wire Line
+	5800 6100 5400 6100
+Wire Wire Line
+	6200 6300 5400 6300
+Wire Wire Line
+	5600 6500 5400 6500
+$Comp
+L supply-alias:GND #PWR?
+U 1 1 5F4ED91D
+P 1800 6300
+AR Path="/5F062C46/5F4ED91D" Ref="#PWR?"  Part="1" 
+AR Path="/5F235A43/5F4ED91D" Ref="#PWR?"  Part="1" 
+AR Path="/5F237486/5F4ED91D" Ref="#PWR?"  Part="1" 
+AR Path="/5F259F7D/5F4ED91D" Ref="#PWR0404"  Part="1" 
+F 0 "#PWR0404" H 1800 6050 50  0001 C CNN
+F 1 "GND" H 1800 6150 50  0000 C CNN
+F 2 "" H 1800 6300 50  0001 C CNN
+F 3 "" H 1800 6300 50  0001 C CNN
+	1    1800 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L supply-value:+3V3 #PWR?
+U 1 1 5F4ED923
+P 1800 5800
+AR Path="/5F062C46/5F4ED923" Ref="#PWR?"  Part="1" 
+AR Path="/5F235A43/5F4ED923" Ref="#PWR?"  Part="1" 
+AR Path="/5F237486/5F4ED923" Ref="#PWR?"  Part="1" 
+AR Path="/5F259F7D/5F4ED923" Ref="#PWR0403"  Part="1" 
+F 0 "#PWR0403" H 1800 5650 50  0001 C CNN
+F 1 "+3V3" H 1800 5940 50  0000 C CNN
+F 2 "" H 1800 5800 50  0001 C CNN
+F 3 "" H 1800 5800 50  0001 C CNN
+	1    1800 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L passive:C C?
+U 1 1 5F4ED929
+P 1800 6200
+AR Path="/5EFFEFDE/5F019185/5F4ED929" Ref="C?"  Part="1" 
+AR Path="/5F062C46/5F4ED929" Ref="C?"  Part="1" 
+AR Path="/5F235A43/5F4ED929" Ref="C?"  Part="1" 
+AR Path="/5F237486/5F4ED929" Ref="C?"  Part="1" 
+AR Path="/5F259F7D/5F4ED929" Ref="C209"  Part="1" 
+F 0 "C209" H 1900 6250 50  0000 L CNN
+F 1 "1u" H 1900 6150 50  0000 L CNN
+F 2 "Capacitor-Chip:C_CHIP_1005_Hand_NoSilk" H 1900 6100 50  0001 C CNN
+F 3 "" H 1825 6300 50  0001 C CNN
+F 4 "C1005X5R1V105K050BE" H 1800 6200 50  0001 C CNN "PartName"
+	1    1800 6200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 6300 1800 6300
+Connection ~ 1800 6300
+Wire Wire Line
+	2100 6100 1800 6100
+Connection ~ 1800 6100
+$Comp
+L supply-alias:GND #PWR?
+U 1 1 5F4ED933
+P 2000 6700
+AR Path="/5F062C46/5F4ED933" Ref="#PWR?"  Part="1" 
+AR Path="/5F235A43/5F4ED933" Ref="#PWR?"  Part="1" 
+AR Path="/5F237486/5F4ED933" Ref="#PWR?"  Part="1" 
+AR Path="/5F259F7D/5F4ED933" Ref="#PWR0407"  Part="1" 
+F 0 "#PWR0407" H 2000 6450 50  0001 C CNN
+F 1 "GND" H 2000 6550 50  0000 C CNN
+F 2 "" H 2000 6700 50  0001 C CNN
+F 3 "" H 2000 6700 50  0001 C CNN
+	1    2000 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 6700 2100 6700
+Wire Wire Line
+	2100 6500 1800 6500
+$Comp
+L passive:C C?
+U 1 1 5F4ED93B
+P 1800 6600
+AR Path="/5EFFEFDE/5F019185/5F4ED93B" Ref="C?"  Part="1" 
+AR Path="/5F062C46/5F4ED93B" Ref="C?"  Part="1" 
+AR Path="/5F235A43/5F4ED93B" Ref="C?"  Part="1" 
+AR Path="/5F237486/5F4ED93B" Ref="C?"  Part="1" 
+AR Path="/5F259F7D/5F4ED93B" Ref="C210"  Part="1" 
+F 0 "C210" H 1900 6650 50  0000 L CNN
+F 1 "1u" H 1900 6550 50  0000 L CNN
+F 2 "Capacitor-Chip:C_CHIP_1005_Hand_NoSilk" H 1900 6500 50  0001 C CNN
+F 3 "" H 1825 6700 50  0001 C CNN
+F 4 "C1005X5R1V105K050BE" H 1800 6600 50  0001 C CNN "PartName"
+	1    1800 6600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L supply-alias:GND #PWR?
+U 1 1 5F4ED941
+P 1800 6700
+AR Path="/5F062C46/5F4ED941" Ref="#PWR?"  Part="1" 
+AR Path="/5F235A43/5F4ED941" Ref="#PWR?"  Part="1" 
+AR Path="/5F237486/5F4ED941" Ref="#PWR?"  Part="1" 
+AR Path="/5F259F7D/5F4ED941" Ref="#PWR0405"  Part="1" 
+F 0 "#PWR0405" H 1800 6450 50  0001 C CNN
+F 1 "GND" H 1800 6550 50  0000 C CNN
+F 2 "" H 1800 6700 50  0001 C CNN
+F 3 "" H 1800 6700 50  0001 C CNN
+	1    1800 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 6500 2900 6500
+Wire Wire Line
+	1400 7000 1400 6500
+Wire Wire Line
+	1400 6500 1800 6500
+Connection ~ 1800 6500
+$Comp
+L passive:C C?
+U 1 1 5F4ED94B
+P 4300 6600
+AR Path="/5EFFEFDE/5F019185/5F4ED94B" Ref="C?"  Part="1" 
+AR Path="/5F062C46/5F4ED94B" Ref="C?"  Part="1" 
+AR Path="/5F235A43/5F4ED94B" Ref="C?"  Part="1" 
+AR Path="/5F237486/5F4ED94B" Ref="C?"  Part="1" 
+AR Path="/5F259F7D/5F4ED94B" Ref="C216"  Part="1" 
+F 0 "C216" H 4400 6650 50  0000 L CNN
+F 1 "1u" H 4400 6550 50  0000 L CNN
+F 2 "Capacitor-Chip:C_CHIP_1005_Hand_NoSilk" H 4400 6500 50  0001 C CNN
+F 3 "" H 4325 6700 50  0001 C CNN
+F 4 "C1005X5R1V105K050BE" H 4300 6600 50  0001 C CNN "PartName"
+	1    4300 6600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L passive:C C?
+U 1 1 5F4ED951
+P 4300 6200
+AR Path="/5EFFEFDE/5F019185/5F4ED951" Ref="C?"  Part="1" 
+AR Path="/5F062C46/5F4ED951" Ref="C?"  Part="1" 
+AR Path="/5F235A43/5F4ED951" Ref="C?"  Part="1" 
+AR Path="/5F237486/5F4ED951" Ref="C?"  Part="1" 
+AR Path="/5F259F7D/5F4ED951" Ref="C215"  Part="1" 
+F 0 "C215" H 4400 6250 50  0000 L CNN
+F 1 "1u" H 4400 6150 50  0000 L CNN
+F 2 "Capacitor-Chip:C_CHIP_1005_Hand_NoSilk" H 4400 6100 50  0001 C CNN
+F 3 "" H 4325 6300 50  0001 C CNN
+F 4 "C1005X5R1V105K050BE" H 4300 6200 50  0001 C CNN "PartName"
+	1    4300 6200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 6300 4600 6300
+$Comp
+L supply-alias:GND #PWR?
+U 1 1 5F4ED958
+P 4300 6300
+AR Path="/5F062C46/5F4ED958" Ref="#PWR?"  Part="1" 
+AR Path="/5F235A43/5F4ED958" Ref="#PWR?"  Part="1" 
+AR Path="/5F237486/5F4ED958" Ref="#PWR?"  Part="1" 
+AR Path="/5F259F7D/5F4ED958" Ref="#PWR0413"  Part="1" 
+F 0 "#PWR0413" H 4300 6050 50  0001 C CNN
+F 1 "GND" H 4300 6150 50  0000 C CNN
+F 2 "" H 4300 6300 50  0001 C CNN
+F 3 "" H 4300 6300 50  0001 C CNN
+	1    4300 6300
+	1    0    0    -1  
+$EndComp
+Connection ~ 4300 6300
+$Comp
+L supply-value:+3V3 #PWR?
+U 1 1 5F4ED95F
+P 4300 5800
+AR Path="/5F062C46/5F4ED95F" Ref="#PWR?"  Part="1" 
+AR Path="/5F235A43/5F4ED95F" Ref="#PWR?"  Part="1" 
+AR Path="/5F237486/5F4ED95F" Ref="#PWR?"  Part="1" 
+AR Path="/5F259F7D/5F4ED95F" Ref="#PWR0412"  Part="1" 
+F 0 "#PWR0412" H 4300 5650 50  0001 C CNN
+F 1 "+3V3" H 4300 5940 50  0000 C CNN
+F 2 "" H 4300 5800 50  0001 C CNN
+F 3 "" H 4300 5800 50  0001 C CNN
+	1    4300 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 6100 4600 6100
+Connection ~ 4300 6100
+$Comp
+L supply-alias:GND #PWR?
+U 1 1 5F4ED967
+P 4500 6700
+AR Path="/5F062C46/5F4ED967" Ref="#PWR?"  Part="1" 
+AR Path="/5F235A43/5F4ED967" Ref="#PWR?"  Part="1" 
+AR Path="/5F237486/5F4ED967" Ref="#PWR?"  Part="1" 
+AR Path="/5F259F7D/5F4ED967" Ref="#PWR0415"  Part="1" 
+F 0 "#PWR0415" H 4500 6450 50  0001 C CNN
+F 1 "GND" H 4500 6550 50  0000 C CNN
+F 2 "" H 4500 6700 50  0001 C CNN
+F 3 "" H 4500 6700 50  0001 C CNN
+	1    4500 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 6700 4600 6700
+Wire Wire Line
+	4600 6500 4300 6500
+Wire Wire Line
+	3900 6500 3900 7000
+Wire Wire Line
+	3900 6500 4300 6500
+Connection ~ 4300 6500
+$Comp
+L supply-alias:GND #PWR?
+U 1 1 5F4ED972
+P 4300 6700
+AR Path="/5F062C46/5F4ED972" Ref="#PWR?"  Part="1" 
+AR Path="/5F235A43/5F4ED972" Ref="#PWR?"  Part="1" 
+AR Path="/5F237486/5F4ED972" Ref="#PWR?"  Part="1" 
+AR Path="/5F259F7D/5F4ED972" Ref="#PWR0414"  Part="1" 
+F 0 "#PWR0414" H 4300 6450 50  0001 C CNN
+F 1 "GND" H 4300 6550 50  0000 C CNN
+F 2 "" H 4300 6700 50  0001 C CNN
+F 3 "" H 4300 6700 50  0001 C CNN
+	1    4300 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L passive:R R?
+U 1 1 5F4ED978
+P 1800 5900
+AR Path="/5EFFEFDE/5F019185/5F4ED978" Ref="R?"  Part="1" 
+AR Path="/5F062C46/5F4ED978" Ref="R?"  Part="1" 
+AR Path="/5F235A43/5F4ED978" Ref="R?"  Part="1" 
+AR Path="/5F237486/5F4ED978" Ref="R?"  Part="1" 
+AR Path="/5F259F7D/5F4ED978" Ref="R121"  Part="1" 
+F 0 "R121" H 1858 5946 50  0000 L CNN
+F 1 "10" H 1858 5855 50  0000 L CNN
+F 2 "Resistor-Chip:R_CHIP_1005_Hand_NoSilk" V 1850 5800 50  0001 C CNN
+F 3 "" H 1850 6000 50  0001 C CNN
+F 4 "RK73B1ETTP100J" H 1800 5900 50  0001 C CNN "PartName"
+	1    1800 5900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L passive:R R?
+U 1 1 5F4ED97E
+P 4300 5900
+AR Path="/5EFFEFDE/5F019185/5F4ED97E" Ref="R?"  Part="1" 
+AR Path="/5F062C46/5F4ED97E" Ref="R?"  Part="1" 
+AR Path="/5F235A43/5F4ED97E" Ref="R?"  Part="1" 
+AR Path="/5F237486/5F4ED97E" Ref="R?"  Part="1" 
+AR Path="/5F259F7D/5F4ED97E" Ref="R124"  Part="1" 
+F 0 "R124" H 4358 5946 50  0000 L CNN
+F 1 "10" H 4358 5855 50  0000 L CNN
+F 2 "Resistor-Chip:R_CHIP_1005_Hand_NoSilk" V 4350 5800 50  0001 C CNN
+F 3 "" H 4350 6000 50  0001 C CNN
+F 4 "RK73B1ETTP100J" H 4300 5900 50  0001 C CNN "PartName"
+	1    4300 5900
+	-1   0    0    -1  
+$EndComp
+Text Label 6200 4600 3    50   ~ 0
+SHUNT_C
+Wire Wire Line
+	1400 7000 3100 7000
+Wire Wire Line
+	3900 7000 5600 7000
+Wire Wire Line
+	3000 5100 3000 6100
+Wire Wire Line
+	5500 3700 5500 5100
+Wire Wire Line
+	3000 5100 5500 5100
+Wire Wire Line
+	5600 3800 5600 5200
+Wire Wire Line
+	5600 5200 3100 5200
+Wire Wire Line
+	3100 5200 3100 6300
+Wire Wire Line
+	6200 4500 6200 6300
+Wire Wire Line
+	5800 4500 5800 6100
+Wire Wire Line
+	4300 6000 4300 6100
+Wire Wire Line
+	1800 6000 1800 6100
+Wire Wire Line
+	5600 3800 6200 3800
+Wire Wire Line
+	6200 3800 6200 3300
+Connection ~ 6200 3300
+Wire Wire Line
+	6200 3300 6400 3300
+Wire Wire Line
+	5500 3700 5800 3700
+Wire Wire Line
+	5800 3700 5800 3300
+Connection ~ 5800 3300
+Wire Wire Line
+	5800 3300 5900 3300
+Text Label 6200 3400 3    50   ~ 0
+SHUNT_B
+Connection ~ 6200 4500
+Wire Wire Line
+	6200 4500 6400 4500
+Connection ~ 5800 4500
+Wire Wire Line
+	5800 4500 5900 4500
+Wire Wire Line
+	1500 3000 3400 3000
+Wire Wire Line
+	1500 3100 3400 3100
+Wire Wire Line
+	1500 3300 3400 3300
+Wire Wire Line
+	1500 3400 3400 3400
+Wire Wire Line
+	1500 3500 3400 3500
+Wire Wire Line
+	1500 3600 2200 3600
+Wire Wire Line
+	1500 3700 2000 3700
+Wire Wire Line
+	1500 3800 1800 3800
+$Comp
+L passive:R R?
+U 1 1 5EA40EFB
+P 10000 4400
+AR Path="/5F235A43/5EA40EFB" Ref="R?"  Part="1" 
+AR Path="/5F259F7D/5EA40EFB" Ref="R128"  Part="1" 
+F 0 "R128" V 9950 4300 50  0000 R CNN
+F 1 "51" V 9950 4500 50  0000 L CNN
+F 2 "Resistor-Chip:R_CHIP_1005_Hand_NoSilk" V 10050 4300 50  0001 C CNN
+F 3 "" H 10050 4500 50  0001 C CNN
+F 4 "RK73B1ETTP510J" H 10000 4400 50  0001 C CNN "PartName"
+F 5 "P板" H 10000 4400 50  0001 C CNN "Supplier"
+	1    10000 4400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10100 4200 10500 4200
+$Comp
+L passive:R R?
+U 1 1 5EA9B0A9
+P 9500 2800
+AR Path="/5F235A43/5EA9B0A9" Ref="R?"  Part="1" 
+AR Path="/5F259F7D/5EA9B0A9" Ref="R127"  Part="1" 
+F 0 "R127" H 9550 2850 50  0000 L CNN
+F 1 "100k" H 9550 2750 50  0000 L CNN
+F 2 "Resistor-Chip:R_CHIP_1005_Hand_NoSilk" V 9550 2700 50  0001 C CNN
+F 3 "" H 9550 2900 50  0001 C CNN
+F 4 "RK73H1ETTP1003F" H 9500 2800 50  0001 C CNN "PartName"
+F 5 "P板" H 9500 2800 50  0001 C CNN "Supplier"
+	1    9500 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 2700 9500 2400
+Wire Wire Line
+	9500 2400 9300 2400
+Wire Wire Line
+	10100 4400 10500 4400
+Connection ~ 9300 2400
+Wire Wire Line
+	9300 2900 9300 4200
+Connection ~ 9300 4200
+Wire Wire Line
+	9300 4200 9900 4200
+Wire Wire Line
+	9500 2900 9500 4400
+Connection ~ 9500 4400
+Wire Wire Line
+	9500 4400 9900 4400
+Wire Wire Line
+	9000 1600 9200 1600
+$Comp
+L passive:R_Array_4 RA?
+U 2 1 5EA1AF22
+P 2000 4200
+AR Path="/5E4B5B3E/5EA1AF22" Ref="RA?"  Part="3" 
+AR Path="/5E4B5786/5EA1AF22" Ref="RA?"  Part="3" 
+AR Path="/5F235278/5EA1AF22" Ref="RA?"  Part="2" 
+AR Path="/5F235A43/5EA1AF22" Ref="RA?"  Part="2" 
+AR Path="/5F259EEE/5EA1AF22" Ref="RA?"  Part="2" 
+AR Path="/5F259F40/5EA1AF22" Ref="RA?"  Part="2" 
+AR Path="/5F259F7D/5EA1AF22" Ref="RA27"  Part="2" 
+F 0 "RA27" V 1950 4050 50  0000 R CNN
+F 1 "4.7k" V 1950 4350 50  0000 L CNN
+F 2 "Resistor-Chip:R_CHIP_4x1005_CONCAVE" H 2000 4200 50  0001 C CNN
+F 3 "" H 2000 4200 50  0001 C CNN
+F 4 "EXB-N8V472JX" H 2000 4200 50  0001 C CNN "PartName"
+	2    2000 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L passive:R_Array_4 RA?
+U 1 1 5EA1AF28
+P 2200 4200
+AR Path="/5E4B5B3E/5EA1AF28" Ref="RA?"  Part="4" 
+AR Path="/5E4B5786/5EA1AF28" Ref="RA?"  Part="4" 
+AR Path="/5F235278/5EA1AF28" Ref="RA?"  Part="1" 
+AR Path="/5F235A43/5EA1AF28" Ref="RA?"  Part="1" 
+AR Path="/5F259EEE/5EA1AF28" Ref="RA?"  Part="1" 
+AR Path="/5F259F40/5EA1AF28" Ref="RA?"  Part="1" 
+AR Path="/5F259F7D/5EA1AF28" Ref="RA27"  Part="1" 
+F 0 "RA27" V 2150 4050 50  0000 R CNN
+F 1 "4.7k" V 2150 4350 50  0000 L CNN
+F 2 "Resistor-Chip:R_CHIP_4x1005_CONCAVE" H 2200 4200 50  0001 C CNN
+F 3 "" H 2200 4200 50  0001 C CNN
+F 4 "EXB-N8V472JX" H 2200 4200 50  0001 C CNN "PartName"
+	1    2200 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L passive:R_Array_4 RA?
+U 3 1 5EA1AF2E
+P 1800 4200
+AR Path="/5E4B5B3E/5EA1AF2E" Ref="RA?"  Part="2" 
+AR Path="/5E4B5786/5EA1AF2E" Ref="RA?"  Part="2" 
+AR Path="/5F235278/5EA1AF2E" Ref="RA?"  Part="3" 
+AR Path="/5F235A43/5EA1AF2E" Ref="RA?"  Part="3" 
+AR Path="/5F259EEE/5EA1AF2E" Ref="RA?"  Part="3" 
+AR Path="/5F259F40/5EA1AF2E" Ref="RA?"  Part="3" 
+AR Path="/5F259F7D/5EA1AF2E" Ref="RA27"  Part="3" 
+F 0 "RA27" V 1750 4050 50  0000 R CNN
+F 1 "4.7k" V 1750 4350 50  0000 L CNN
+F 2 "Resistor-Chip:R_CHIP_4x1005_CONCAVE" H 1800 4200 50  0001 C CNN
+F 3 "" H 1800 4200 50  0001 C CNN
+F 4 "EXB-N8V472JX" H 1800 4200 50  0001 C CNN "PartName"
+	3    1800 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 4100 1800 3800
+Wire Wire Line
+	2000 3700 2000 4100
+Wire Wire Line
+	2200 4100 2200 3600
+Wire Wire Line
+	1800 4300 1800 4700
+Wire Wire Line
+	1800 4700 2000 4700
+Wire Wire Line
+	2200 4700 2200 4300
+Connection ~ 2000 4700
+Wire Wire Line
+	2000 4700 2200 4700
+Wire Wire Line
+	2000 4300 2000 4700
+$Comp
+L supply-alias:GND #PWR?
+U 1 1 5EA1AF3D
+P 2000 4700
+AR Path="/5EFFEFDE/5F019185/5EA1AF3D" Ref="#PWR?"  Part="1" 
+AR Path="/5F062C46/5EA1AF3D" Ref="#PWR?"  Part="1" 
+AR Path="/5F235A43/5EA1AF3D" Ref="#PWR?"  Part="1" 
+AR Path="/5F237486/5EA1AF3D" Ref="#PWR?"  Part="1" 
+AR Path="/5F259EEE/5EA1AF3D" Ref="#PWR?"  Part="1" 
+AR Path="/5F259F40/5EA1AF3D" Ref="#PWR?"  Part="1" 
+AR Path="/5F259F7D/5EA1AF3D" Ref="#PWR0406"  Part="1" 
+F 0 "#PWR0406" H 2000 4450 50  0001 C CNN
+F 1 "GND" H 2000 4550 50  0000 C CNN
+F 2 "" H 2000 4700 50  0001 C CNN
+F 3 "" H 2000 4700 50  0001 C CNN
+	1    2000 4700
+	1    0    0    -1  
+$EndComp
+Connection ~ 2200 3600
+Wire Wire Line
+	2200 3600 3400 3600
+Connection ~ 2000 3700
+Wire Wire Line
+	2000 3700 3400 3700
+Connection ~ 1800 3800
+Wire Wire Line
+	1800 3800 3400 3800
+$Comp
+L passive:R_Array_4 RA?
+U 4 1 5EA1AF43
+P 9200 1800
+AR Path="/5E4B5B3E/5EA1AF43" Ref="RA?"  Part="2" 
+AR Path="/5E4B5786/5EA1AF43" Ref="RA?"  Part="2" 
+AR Path="/5F235278/5EA1AF43" Ref="RA?"  Part="3" 
+AR Path="/5F235A43/5EA1AF43" Ref="RA?"  Part="3" 
+AR Path="/5F259EEE/5EA1AF43" Ref="RA?"  Part="3" 
+AR Path="/5F259F40/5EA1AF43" Ref="RA?"  Part="4" 
+AR Path="/5F259F7D/5EA1AF43" Ref="RA27"  Part="4" 
+F 0 "RA27" H 9288 1846 50  0000 L CNN
+F 1 "4.7k" H 9288 1755 50  0000 L CNN
+F 2 "Resistor-Chip:R_CHIP_4x1005_CONCAVE" H 9200 1800 50  0001 C CNN
+F 3 "" H 9200 1800 50  0001 C CNN
+F 4 "EXB-N8V472JX" H 9200 1800 50  0001 C CNN "PartName"
+	4    9200 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L supply-alias:GND #PWR?
+U 1 1 5EA31E6B
+P 9200 1900
+AR Path="/5EA31E6B" Ref="#PWR?"  Part="1" 
+AR Path="/5F235278/5EA31E6B" Ref="#PWR?"  Part="1" 
+AR Path="/5F235A43/5EA31E6B" Ref="#PWR?"  Part="1" 
+AR Path="/5F259EEE/5EA31E6B" Ref="#PWR?"  Part="1" 
+AR Path="/5F259F40/5EA31E6B" Ref="#PWR?"  Part="1" 
+AR Path="/5F259F7D/5EA31E6B" Ref="#PWR0427"  Part="1" 
+F 0 "#PWR0427" H 9200 1650 50  0001 C CNN
+F 1 "GND" H 9200 1750 50  0000 C CNN
+F 2 "" H 9200 1900 50  0001 C CNN
+F 3 "" H 9200 1900 50  0001 C CNN
+	1    9200 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9200 1700 9200 1600
+Connection ~ 9200 1600
+Wire Wire Line
+	9200 1600 9400 1600
+Wire Wire Line
+	4600 3300 5800 3300
+Wire Wire Line
+	4600 3100 5100 3100
+Wire Wire Line
+	5300 3100 6200 3100
+Wire Wire Line
+	6200 3100 6200 3300
+$Comp
+L passive:C C?
+U 1 1 5E61F526
+P 5200 3100
+AR Path="/5EFFEFDE/5F019185/5E61F526" Ref="C?"  Part="1" 
+AR Path="/5F062C46/5E61F526" Ref="C?"  Part="1" 
+AR Path="/5F235A43/5E61F526" Ref="C?"  Part="1" 
+AR Path="/5F237486/5E61F526" Ref="C?"  Part="1" 
+AR Path="/5F259EEE/5E61F526" Ref="C?"  Part="1" 
+AR Path="/5F259F7D/5E61F526" Ref="C222"  Part="1" 
+F 0 "C222" V 5432 3100 50  0000 C CNN
+F 1 "100n" V 5341 3100 50  0000 C CNN
+F 2 "Capacitor-Chip:C_CHIP_1005_Hand_NoSilk" H 5300 3000 50  0001 C CNN
+F 3 "" H 5225 3200 50  0001 C CNN
+F 4 "GRM155R71H104ME14D" H 5200 3100 50  0001 C CNN "PartName"
+	1    5200 3100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4600 4300 5100 4300
+Wire Wire Line
+	4600 4500 5800 4500
+Wire Wire Line
+	5300 4300 6200 4300
+Wire Wire Line
+	6200 4300 6200 4500
+Connection ~ 8000 2400
+Wire Wire Line
+	8000 2400 7600 2400
+$EndSCHEMATC

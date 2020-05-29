@@ -1,0 +1,256 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 24
+Title "Phoenix DVT"
+Date "2020-05-18"
+Rev "1"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L supply-alias:GND #PWR0168
+U 1 1 5E837C95
+P 4900 4100
+F 0 "#PWR0168" H 4900 3850 50  0001 C CNN
+F 1 "GND" H 4900 3950 50  0000 C CNN
+F 2 "" H 4900 4100 50  0001 C CNN
+F 3 "" H 4900 4100 50  0001 C CNN
+	1    4900 4100
+	1    0    0    -1  
+$EndComp
+Text HLabel 4500 3200 0    50   Input ~ 0
+SPI_SCLK
+Text HLabel 6600 3200 2    50   Input ~ 0
+SPI_MOSI
+Text HLabel 6600 3300 2    50   Output ~ 0
+SPI_MISO
+Text HLabel 4500 3300 0    50   Input ~ 0
+~SPI_CS0
+Text HLabel 6600 3400 2    50   Input ~ 0
+~SPI_CS1
+Text HLabel 4500 3900 0    50   BiDi ~ 0
+I2C0_SCL
+Text HLabel 4500 3800 0    50   BiDi ~ 0
+I2C0_SDA
+Text HLabel 4500 5300 0    50   Input ~ 0
+I2S_MCLK
+Text HLabel 4500 5200 0    50   Input ~ 0
+I2S_SCLK
+Text HLabel 4500 5100 0    50   Input ~ 0
+I2S_FS
+Text HLabel 6600 5100 2    50   Input ~ 0
+I2S_DOUT
+Text HLabel 6600 5200 2    50   Output ~ 0
+I2S_DIN
+Wire Wire Line
+	6600 5200 5800 5200
+Wire Wire Line
+	5800 5100 6600 5100
+Wire Wire Line
+	4500 5200 5300 5200
+Wire Wire Line
+	5300 5100 4500 5100
+Wire Wire Line
+	4500 5300 5300 5300
+Wire Wire Line
+	6600 3300 5800 3300
+Wire Wire Line
+	5800 3200 6600 3200
+Wire Wire Line
+	4500 3200 5300 3200
+Wire Wire Line
+	5800 3400 6600 3400
+Wire Wire Line
+	4500 3300 5300 3300
+Wire Wire Line
+	4500 3900 5300 3900
+Wire Wire Line
+	5300 3800 4500 3800
+Wire Wire Line
+	4500 3600 5300 3600
+Wire Wire Line
+	5300 3400 4500 3400
+Wire Wire Line
+	6600 3500 5800 3500
+Text HLabel 4500 3600 0    50   BiDi ~ 0
+GPIO01
+Text HLabel 6600 3800 2    50   Input ~ 0
+~MOD_SLEEP
+Text HLabel 4500 3400 0    50   Input ~ 0
+UART_TX
+Text HLabel 6600 3500 2    50   Output ~ 0
+UART_RX
+Text HLabel 4500 3500 0    50   Input ~ 0
+~UART_RTS
+Text HLabel 6600 3600 2    50   Output ~ 0
+~UART_CTS
+Wire Wire Line
+	4500 3500 5300 3500
+Wire Wire Line
+	5800 3600 6600 3600
+$Comp
+L Connector_Generic:Conn_02x10_Odd_Even J7
+U 1 1 5EDDD1EC
+P 5500 3400
+F 0 "J7" H 5550 3900 50  0000 C CNN
+F 1 "CLT-110-02-F-D-BE-A" H 5550 2800 50  0000 C CNN
+F 2 "Connector-Samtec:CLT-110-02-x-D-BE-A" H 5500 3400 50  0001 C CNN
+F 3 "" H 5500 3400 50  0001 C CNN
+F 4 "CLT-110-02-F-D-BE-A" H 5500 3400 50  0001 C CNN "PartName"
+	1    5500 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L supply-alias:GND #PWR0174
+U 1 1 5EDE3469
+P 6200 4100
+F 0 "#PWR0174" H 6200 3850 50  0001 C CNN
+F 1 "GND" H 6200 3950 50  0000 C CNN
+F 2 "" H 6200 4100 50  0001 C CNN
+F 3 "" H 6200 4100 50  0001 C CNN
+	1    6200 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 4100 6200 3900
+$Comp
+L Connector_Generic:Conn_02x06_Odd_Even J8
+U 1 1 5EC14763
+P 5500 5200
+F 0 "J8" H 5550 5500 50  0000 C CNN
+F 1 "CLT-106-02-F-D-BE-A" H 5550 4800 50  0000 C CNN
+F 2 "Connector-Samtec:CLT-106-02-x-D-BE-A" H 5500 5200 50  0001 C CNN
+F 3 "" H 5500 5200 50  0001 C CNN
+F 4 "CLT-106-02-F-D-BE-A" H 5500 5200 50  0001 C CNN "PartName"
+	1    5500 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L supply-alias:GND #PWR0169
+U 1 1 5EDB997F
+P 4900 5600
+F 0 "#PWR0169" H 4900 5350 50  0001 C CNN
+F 1 "GND" H 4900 5450 50  0000 C CNN
+F 2 "" H 4900 5600 50  0001 C CNN
+F 3 "" H 4900 5600 50  0001 C CNN
+	1    4900 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L supply-alias:GND #PWR0175
+U 1 1 5EDC1BF5
+P 6200 5600
+F 0 "#PWR0175" H 6200 5350 50  0001 C CNN
+F 1 "GND" H 6200 5450 50  0000 C CNN
+F 2 "" H 6200 5600 50  0001 C CNN
+F 3 "" H 6200 5600 50  0001 C CNN
+	1    6200 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 5600 4900 5000
+Wire Wire Line
+	4900 5000 5300 5000
+Wire Wire Line
+	5800 5500 6200 5500
+Wire Wire Line
+	6200 5500 6200 5600
+Wire Wire Line
+	6200 3900 5800 3900
+Wire Wire Line
+	4900 3000 5300 3000
+Wire Wire Line
+	4900 3000 4900 4100
+$Comp
+L supply-value:+1V8 #PWR0172
+U 1 1 5EE31384
+P 6000 4900
+F 0 "#PWR0172" H 6000 4750 50  0001 C CNN
+F 1 "+1V8" H 6000 5040 50  0000 C CNN
+F 2 "" H 6000 4900 50  0001 C CNN
+F 3 "" H 6000 4900 50  0001 C CNN
+	1    6000 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 5000 5800 5000
+Text HLabel 6600 5400 2    50   BiDi ~ 0
+I2C1_SCL
+Text HLabel 6600 5300 2    50   BiDi ~ 0
+I2C1_SDA
+Wire Wire Line
+	6600 5300 5800 5300
+Wire Wire Line
+	5800 5400 6600 5400
+Text HLabel 4500 3700 0    50   BiDi ~ 0
+GPIO02
+Text HLabel 6600 3700 2    50   BiDi ~ 0
+GPIO10
+Text HLabel 4500 5500 0    50   BiDi ~ 0
+GPIO07_PWM
+Text HLabel 4500 5400 0    50   BiDi ~ 0
+GPIO13_PWM
+Wire Wire Line
+	4500 5400 5300 5400
+Wire Wire Line
+	5300 5500 4500 5500
+$Comp
+L supply-value:+5V #PWR0170
+U 1 1 5F286AC8
+P 5100 2900
+F 0 "#PWR0170" H 5100 2750 50  0001 C CNN
+F 1 "+5V" H 5100 3040 50  0000 C CNN
+F 2 "" H 5100 2900 50  0001 C CNN
+F 3 "" H 5100 2900 50  0001 C CNN
+	1    5100 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 3000 6000 3000
+$Comp
+L supply-value:+3V3 #PWR0171
+U 1 1 5F28A290
+P 6000 2900
+F 0 "#PWR0171" H 6000 2750 50  0001 C CNN
+F 1 "+3V3" H 6000 3040 50  0000 C CNN
+F 2 "" H 6000 2900 50  0001 C CNN
+F 3 "" H 6000 2900 50  0001 C CNN
+	1    6000 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L supply-alias:VBAT #PWR0173
+U 1 1 5F337487
+P 6200 2900
+F 0 "#PWR0173" H 6200 2750 50  0001 C CNN
+F 1 "VBAT" H 6200 3040 50  0000 C CNN
+F 2 "" H 6200 2900 50  0001 C CNN
+F 3 "" H 6200 2900 50  0001 C CNN
+	1    6200 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 2900 6000 3000
+Wire Wire Line
+	6000 4900 6000 5000
+Wire Wire Line
+	5300 3100 5100 3100
+Wire Wire Line
+	5100 3100 5100 2900
+Wire Wire Line
+	6200 2900 6200 3100
+Wire Wire Line
+	6200 3100 5800 3100
+Wire Wire Line
+	6600 3800 5800 3800
+Wire Wire Line
+	6600 3700 5800 3700
+Wire Wire Line
+	5300 3700 4500 3700
+$EndSCHEMATC

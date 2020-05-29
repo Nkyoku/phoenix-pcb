@@ -1,0 +1,445 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 9 24
+Title "Phoenix DVT"
+Date "2020-05-18"
+Rev "1"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 4000 1900 0    50   BiDi ~ 0
+USB_D-
+Text HLabel 4000 1800 0    50   BiDi ~ 0
+USB_D+
+$Comp
+L supply-alias:GND #PWR0195
+U 1 1 5E663E7F
+P 6700 5600
+F 0 "#PWR0195" H 6700 5350 50  0001 C CNN
+F 1 "GND" H 6700 5450 50  0000 C CNN
+F 2 "" H 6700 5600 50  0001 C CNN
+F 3 "" H 6700 5600 50  0001 C CNN
+	1    6700 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L supply-alias:GND #PWR0197
+U 1 1 5E664A8A
+P 7400 5600
+F 0 "#PWR0197" H 7400 5350 50  0001 C CNN
+F 1 "GND" H 7400 5450 50  0000 C CNN
+F 2 "" H 7400 5600 50  0001 C CNN
+F 3 "" H 7400 5600 50  0001 C CNN
+	1    7400 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L supply-alias:GND #PWR0196
+U 1 1 5E665457
+P 7050 5600
+F 0 "#PWR0196" H 7050 5350 50  0001 C CNN
+F 1 "GND" H 7050 5450 50  0000 C CNN
+F 2 "" H 7050 5600 50  0001 C CNN
+F 3 "" H 7050 5600 50  0001 C CNN
+	1    7050 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 1700 7300 1700
+Wire Wire Line
+	7300 1800 7500 1800
+Wire Wire Line
+	7500 1800 7500 1700
+Connection ~ 7500 1700
+Wire Wire Line
+	7500 1800 7500 5200
+Wire Wire Line
+	7500 5200 7300 5200
+Connection ~ 7500 1800
+Wire Wire Line
+	7300 5300 7500 5300
+Wire Wire Line
+	7500 5300 7500 5200
+Connection ~ 7500 5200
+Wire Wire Line
+	7400 2500 7300 2500
+Wire Wire Line
+	6700 5600 6700 5400
+Wire Wire Line
+	6700 5400 6800 5400
+Wire Wire Line
+	6700 5400 6700 5100
+Wire Wire Line
+	6700 5100 6800 5100
+Connection ~ 6700 5400
+Wire Wire Line
+	6700 5100 6700 4800
+Wire Wire Line
+	6700 4800 6800 4800
+Connection ~ 6700 5100
+Wire Wire Line
+	6700 4800 6700 4500
+Wire Wire Line
+	6700 4500 6800 4500
+Connection ~ 6700 4800
+Wire Wire Line
+	6700 4500 6700 4200
+Wire Wire Line
+	6700 4200 6800 4200
+Connection ~ 6700 4500
+Wire Wire Line
+	6700 4200 6700 3900
+Wire Wire Line
+	6700 3900 6800 3900
+Connection ~ 6700 4200
+Wire Wire Line
+	6700 3900 6700 3600
+Wire Wire Line
+	6700 3600 6800 3600
+Connection ~ 6700 3900
+Wire Wire Line
+	6700 3600 6700 3300
+Wire Wire Line
+	6700 3300 6800 3300
+Connection ~ 6700 3600
+Connection ~ 6700 3300
+Wire Wire Line
+	6700 2000 6800 2000
+Wire Wire Line
+	6700 2000 6700 1700
+Wire Wire Line
+	6700 1700 6800 1700
+Connection ~ 6700 2000
+Wire Wire Line
+	4000 1800 6800 1800
+Wire Wire Line
+	6800 1900 4000 1900
+$Comp
+L Phoenix:Conn_2Rows-75Pins_MountingPin J13
+U 1 1 5E64058F
+P 7000 3500
+F 0 "J13" H 7050 5517 50  0000 C CNN
+F 1 "2199119-4" H 6826 5426 50  0000 L CNN
+F 2 "Phoenix:2199119-x_E" H 7000 3500 50  0001 C CNN
+F 3 "" H 7000 3500 50  0001 C CNN
+F 4 "2199119-4" H 7000 3500 50  0001 C CNN "PartName"
+	1    7000 3500
+	1    0    0    -1  
+$EndComp
+Text Label 6500 3400 2    50   ~ 0
+PET0+
+Text Label 6500 3500 2    50   ~ 0
+PET0-
+Text Label 6500 3700 2    50   ~ 0
+PER0+
+Text Label 6500 3800 2    50   ~ 0
+PER0-
+Text HLabel 9500 3300 2    50   Input ~ 0
+SUSCLK_LV
+Wire Wire Line
+	7300 4100 7600 4100
+$Comp
+L passive:C C?
+U 1 1 5E75DBB0
+P 4500 3400
+AR Path="/5E7D4299/5E75DBB0" Ref="C?"  Part="1" 
+AR Path="/5E6353A4/5E75DBB0" Ref="C?"  Part="1" 
+AR Path="/5E9E174E/5E7A14E6/5E75DBB0" Ref="C78"  Part="1" 
+F 0 "C78" V 4450 3300 50  0000 R CNN
+F 1 "100n" V 4450 3500 50  0000 L CNN
+F 2 "Capacitor-Chip:C_CHIP_1005_Hand_NoSilk" H 4600 3300 50  0001 C CNN
+F 3 "" H 4525 3500 50  0001 C CNN
+F 4 "GRM155R71H104ME14D" H 4500 3400 50  0001 C CNN "PartName"
+	1    4500 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L passive:C C?
+U 1 1 5E75FF24
+P 5000 3500
+AR Path="/5E7D4299/5E75FF24" Ref="C?"  Part="1" 
+AR Path="/5E6353A4/5E75FF24" Ref="C?"  Part="1" 
+AR Path="/5E9E174E/5E7A14E6/5E75FF24" Ref="C79"  Part="1" 
+F 0 "C79" V 4950 3400 50  0000 R CNN
+F 1 "100n" V 4950 3600 50  0000 L CNN
+F 2 "Capacitor-Chip:C_CHIP_1005_Hand_NoSilk" H 5100 3400 50  0001 C CNN
+F 3 "" H 5025 3600 50  0001 C CNN
+F 4 "GRM155R71H104ME14D" H 5000 3500 50  0001 C CNN "PartName"
+	1    5000 3500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4000 3500 4900 3500
+Text Notes 4400 5800 0    50   ~ 0
+2199119-4 + 9774015243R\n  1.5 mm Bottom Spacing\n  Total 3.2 mm Height\n\n2199230-4 + 9774025243R\n  2.5 mm Bottom Spacing\n  Total 4.2mm Height
+Wire Wire Line
+	9500 5000 9200 5000
+Text HLabel 9500 5000 2    50   Input ~ 0
+W_DISABLE2
+Text HLabel 9500 4700 2    50   Input ~ 0
+W_DISABLE1
+Text HLabel 4000 3400 0    50   Input ~ 0
+PCIE_TX0+
+Text HLabel 4000 3500 0    50   Input ~ 0
+PCIE_TX0-
+Text HLabel 4000 3800 0    50   Output ~ 0
+PCIE_RX0+
+Text HLabel 4000 3700 0    50   Output ~ 0
+PCIE_RX0-
+Text HLabel 4000 4000 0    50   Input ~ 0
+REFCLK0+
+Text HLabel 4000 4100 0    50   Input ~ 0
+REFCLK0-
+Text HLabel 4000 4300 0    50   Input ~ 0
+~CLKREQ0
+Text HLabel 4000 4400 0    50   Output ~ 0
+~PEWAKE0
+Text HLabel 7800 3900 2    50   Input ~ 0
+~PERST0
+$Comp
+L supply-value:+3V3 #PWR0198
+U 1 1 5E7B5A87
+P 7500 1700
+F 0 "#PWR0198" H 7500 1550 50  0001 C CNN
+F 1 "+3V3" H 7500 1840 50  0000 C CNN
+F 2 "" H 7500 1700 50  0001 C CNN
+F 3 "" H 7500 1700 50  0001 C CNN
+	1    7500 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 4200 7700 4200
+Wire Wire Line
+	4000 4100 6800 4100
+Wire Wire Line
+	4000 4000 6800 4000
+Wire Wire Line
+	4000 3700 6800 3700
+Wire Wire Line
+	4000 3800 6800 3800
+Wire Wire Line
+	5100 3500 6800 3500
+Wire Wire Line
+	4600 3400 6800 3400
+Wire Wire Line
+	4400 3400 4000 3400
+Wire Wire Line
+	4000 4400 6800 4400
+Wire Wire Line
+	4000 4300 6800 4300
+$Comp
+L transistor-mos:Q_NMOS_GSD Q8
+U 1 1 5E861ED3
+P 8600 4700
+F 0 "Q8" H 8800 4750 50  0000 L CNN
+F 1 "BSS138W" H 8800 4650 50  0000 L CNN
+F 2 "IC-SOP:SC70-3" H 8800 4800 50  0001 C CNN
+F 3 "" H 8600 4700 50  0001 C CNN
+F 4 "BSS138W-7-F" H 8600 4700 50  0001 C CNN "PartName"
+	1    8600 4700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 3900 7700 3900
+Wire Wire Line
+	7700 3900 7700 4200
+Wire Wire Line
+	7400 5600 7400 2500
+Text Label 7800 4300 0    50   ~ 0
+~W_DISABLE2
+Wire Wire Line
+	8500 4400 7300 4400
+Text Label 7800 4400 0    50   ~ 0
+~W_DISABLE1
+$Comp
+L transistor-mos:Q_NMOS_GSD Q10
+U 1 1 5E86A48B
+P 9100 5000
+F 0 "Q10" H 9300 5050 50  0000 L CNN
+F 1 "BSS138W" H 9300 4950 50  0000 L CNN
+F 2 "IC-SOP:SC70-3" H 9300 5100 50  0001 C CNN
+F 3 "" H 9100 5000 50  0001 C CNN
+F 4 "BSS138W-7-F" H 9100 5000 50  0001 C CNN "PartName"
+	1    9100 5000
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 4400 8500 4500
+Wire Wire Line
+	9000 4300 9000 4800
+Wire Wire Line
+	7300 4300 9000 4300
+Wire Wire Line
+	8700 4700 9500 4700
+$Comp
+L supply-alias:GND #PWR0201
+U 1 1 5E875EDE
+P 8500 5200
+F 0 "#PWR0201" H 8500 4950 50  0001 C CNN
+F 1 "GND" H 8500 5050 50  0000 C CNN
+F 2 "" H 8500 5200 50  0001 C CNN
+F 3 "" H 8500 5200 50  0001 C CNN
+	1    8500 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L supply-alias:GND #PWR0204
+U 1 1 5E87605A
+P 9000 5200
+F 0 "#PWR0204" H 9000 4950 50  0001 C CNN
+F 1 "GND" H 9000 5050 50  0000 C CNN
+F 2 "" H 9000 5200 50  0001 C CNN
+F 3 "" H 9000 5200 50  0001 C CNN
+	1    9000 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 5200 8500 4900
+Wire Wire Line
+	8500 4400 8500 4200
+Connection ~ 8500 4400
+Wire Wire Line
+	9000 4200 9000 4300
+Connection ~ 9000 4300
+$Comp
+L passive:R R65
+U 1 1 5E879B4F
+P 8500 4100
+F 0 "R65" H 8550 4150 50  0000 L CNN
+F 1 "10k" H 8550 4050 50  0000 L CNN
+F 2 "Resistor-Chip:R_CHIP_1005_Hand_NoSilk" V 8550 4000 50  0001 C CNN
+F 3 "" H 8550 4200 50  0001 C CNN
+F 4 "RK73H1ETTP1002F" H 8500 4100 50  0001 C CNN "PartName"
+F 5 "P板" H 8500 4100 50  0001 C CNN "Supplier"
+	1    8500 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L passive:R R66
+U 1 1 5E879C80
+P 9000 4100
+F 0 "R66" H 9050 4150 50  0000 L CNN
+F 1 "10k" H 9050 4050 50  0000 L CNN
+F 2 "Resistor-Chip:R_CHIP_1005_Hand_NoSilk" V 9050 4000 50  0001 C CNN
+F 3 "" H 9050 4200 50  0001 C CNN
+F 4 "RK73H1ETTP1002F" H 9000 4100 50  0001 C CNN "PartName"
+F 5 "P板" H 9000 4100 50  0001 C CNN "Supplier"
+	1    9000 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L supply-value:+3V3 #PWR0200
+U 1 1 5E879E88
+P 8500 4000
+F 0 "#PWR0200" H 8500 3850 50  0001 C CNN
+F 1 "+3V3" H 8500 4140 50  0000 C CNN
+F 2 "" H 8500 4000 50  0001 C CNN
+F 3 "" H 8500 4000 50  0001 C CNN
+	1    8500 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L supply-value:+3V3 #PWR0203
+U 1 1 5E87B302
+P 9000 4000
+F 0 "#PWR0203" H 9000 3850 50  0001 C CNN
+F 1 "+3V3" H 9000 4140 50  0000 C CNN
+F 2 "" H 9000 4000 50  0001 C CNN
+F 3 "" H 9000 4000 50  0001 C CNN
+	1    9000 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L print:MountPad H16
+U 1 1 5EAD3D13
+P 6000 5400
+F 0 "H16" V 5735 5400 50  0000 C CNN
+F 1 "9774015243R" V 5826 5400 50  0000 C CNN
+F 2 "Phoenix:9774015243R" H 6000 5400 50  0001 C CNN
+F 3 "" H 6000 5400 50  0001 C CNN
+F 4 "9774015243R" H 6000 5400 50  0001 C CNN "PartName"
+	1    6000 5400
+	0    1    1    0   
+$EndComp
+$Comp
+L supply-alias:GND #PWR0194
+U 1 1 5EAD42A6
+P 6000 5600
+F 0 "#PWR0194" H 6000 5350 50  0001 C CNN
+F 1 "GND" H 6000 5450 50  0000 C CNN
+F 2 "" H 6000 5600 50  0001 C CNN
+F 3 "" H 6000 5600 50  0001 C CNN
+	1    6000 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L transistor-mos:Q_NMOS_GSD Q9
+U 1 1 5FB42958
+P 9000 3200
+F 0 "Q9" V 9233 3200 50  0000 C CNN
+F 1 "BSS138W" V 9324 3200 50  0000 C CNN
+F 2 "IC-SOP:SC70-3" H 9200 3300 50  0001 C CNN
+F 3 "" H 9000 3200 50  0001 C CNN
+F 4 "BSS138W-7-F" H 9000 3200 50  0001 C CNN "PartName"
+	1    9000 3200
+	0    -1   1    0   
+$EndComp
+$Comp
+L supply-value:+1V8 #PWR0202
+U 1 1 5FB473C3
+P 9000 3100
+F 0 "#PWR0202" H 9000 2950 50  0001 C CNN
+F 1 "+1V8" H 9000 3240 50  0000 C CNN
+F 2 "" H 9000 3100 50  0001 C CNN
+F 3 "" H 9000 3100 50  0001 C CNN
+	1    9000 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9200 3300 9500 3300
+Wire Wire Line
+	8800 3300 8500 3300
+Wire Wire Line
+	7600 3300 7600 4100
+Text Label 7600 3300 0    50   ~ 0
+SUSCLK
+$Comp
+L passive:R R64
+U 1 1 5FB4A452
+P 8500 3100
+F 0 "R64" H 8550 3150 50  0000 L CNN
+F 1 "10k" H 8550 3050 50  0000 L CNN
+F 2 "Resistor-Chip:R_CHIP_1005_Hand_NoSilk" V 8550 3000 50  0001 C CNN
+F 3 "" H 8550 3200 50  0001 C CNN
+F 4 "RK73H1ETTP1002F" H 8500 3100 50  0001 C CNN "PartName"
+F 5 "P板" H 8500 3100 50  0001 C CNN "Supplier"
+	1    8500 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L supply-value:+3V3 #PWR0199
+U 1 1 5FB4AA02
+P 8500 3000
+F 0 "#PWR0199" H 8500 2850 50  0001 C CNN
+F 1 "+3V3" H 8500 3140 50  0000 C CNN
+F 2 "" H 8500 3000 50  0001 C CNN
+F 3 "" H 8500 3000 50  0001 C CNN
+	1    8500 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 3200 8500 3300
+Connection ~ 8500 3300
+Wire Wire Line
+	8500 3300 7600 3300
+Wire Wire Line
+	6700 2000 6700 3300
+Text Notes 3500 3200 0    50   ~ 0
+RX pair is polarity reversed.
+$EndSCHEMATC

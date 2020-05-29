@@ -1,0 +1,14 @@
+(module Hole_C3.2 (layer F.Cu) (tedit 5EA1A059)
+  (descr "Mount Hole")
+  (tags hole)
+  (attr virtual)
+  (fp_text reference "#REF" (at 0 -2.5) (layer F.SilkS) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value "#VALUE" (at 0 2.5) (layer F.Fab) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_circle (center 0 0) (end 2.8 0) (layer Dwgs.User) (width 0.1))
+  (pad "" np_thru_hole circle (at 0 0) (size 3.2 3.2) (drill 3.2) (layers *.Cu *.Mask)
+    (solder_mask_margin 1.2))
+)
