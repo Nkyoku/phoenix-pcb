@@ -1,4 +1,4 @@
-update=2020/05/19 22:46:47
+update=2020/07/12 21:41:09
 version=1
 last_client=kicad
 [general]
@@ -63,7 +63,7 @@ ViaDrill5=0.4
 ViaDiameter6=1
 ViaDrill6=0.6
 dPairWidth1=0.15
-dPairGap1=0.2
+dPairGap1=0.15
 dPairViaGap1=0.25
 SilkLineWidth=0.15
 SilkTextSizeV=1
@@ -265,7 +265,7 @@ ViaDrill=0.3
 uViaDiameter=0.3
 uViaDrill=0.1
 dPairWidth=0.15
-dPairGap=0.2
+dPairGap=0.15
 dPairViaGap=0.25
 [pcbnew/Netclasses/1]
 Name=CS

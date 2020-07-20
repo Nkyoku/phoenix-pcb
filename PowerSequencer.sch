@@ -4,8 +4,8 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 24
-Title "Phoenix DVT"
-Date "2020-05-18"
+Title "Phoenix PVT"
+Date "2020-07-19"
 Rev "1"
 Comp ""
 Comment1 ""
@@ -91,10 +91,10 @@ U 1 1 5ED05BE9
 P 3500 2300
 F 0 "U1" H 3500 3250 50  0000 C CNN
 F 1 "SLG46826G" H 3500 1350 50  0000 C CNN
-F 2 "IC-SOP:TSSOP20-W4.4_Hand" H 3500 2300 50  0001 C CNN
+F 2 "IC-SOP:TSSOP20-W4.4" H 3500 2300 50  0001 C CNN
 F 3 "" H 3500 2300 50  0001 C CNN
 F 4 "SLG46826G" H 3500 2300 50  0001 C CNN "PartName"
-F 5 "Mouser" H 3500 2300 50  0001 C CNN "Supplier"
+F 5 "" H 3500 2300 50  0001 C CNN "Supplier"
 	1    3500 2300
 	1    0    0    -1  
 $EndComp
@@ -332,14 +332,12 @@ Wire Wire Line
 	5000 2100 4100 2100
 Wire Wire Line
 	2000 2100 2900 2100
-Text HLabel 5000 3000 2    50   Input ~ 0
+Text HLabel 10200 2900 2    50   Input ~ 0
 ESW_IS
 Wire Wire Line
-	5000 3000 4100 3000
+	4300 3000 4100 3000
 Text HLabel 5000 2500 2    50   Input ~ 0
 ~SW_POWER
-Wire Wire Line
-	5000 2000 4100 2000
 $Comp
 L supply-alias:VSYS #PWR013
 U 1 1 5ED05C8D
@@ -547,8 +545,6 @@ Wire Wire Line
 	4100 2800 4300 2800
 Wire Wire Line
 	4100 2400 5000 2400
-Text HLabel 5000 2000 2    50   Input ~ 0
-~SW_UNDECIDED
 Wire Wire Line
 	4100 2500 5000 2500
 Wire Wire Line
@@ -568,7 +564,7 @@ VBAT_MON
 Wire Wire Line
 	4300 2700 4100 2700
 Text HLabel 5000 1500 2    50   Output ~ 0
-~GP_FAULT
+~FPGA_STOP
 Wire Wire Line
 	5000 1500 4600 1500
 $Comp
@@ -675,9 +671,9 @@ F 4 "BSS138W-7-F" H 8700 2200 50  0001 C CNN "PartName"
 	0    1    1    0   
 $EndComp
 Text HLabel 8700 1500 2    50   BiDi ~ 0
-ADC_SCL
+ADC3_SCL
 Text HLabel 8700 1700 2    50   BiDi ~ 0
-ADC_SDA
+ADC3_SDA
 $Comp
 L supply-value:+3V3A #PWR?
 U 1 1 5F111203
@@ -712,11 +708,7 @@ Wire Wire Line
 	8700 2000 8700 2100
 Connection ~ 9200 2000
 Wire Wire Line
-	9200 2000 9700 2000
-Wire Wire Line
-	9700 2000 9700 2700
-Wire Wire Line
-	9500 2900 8100 2900
+	9500 2900 9300 2900
 Wire Wire Line
 	8100 2900 8100 2300
 Wire Wire Line
@@ -726,23 +718,17 @@ Wire Wire Line
 Wire Wire Line
 	8000 2500 8000 3200
 Wire Wire Line
-	9900 2900 10200 2900
-Wire Wire Line
 	8000 3200 10200 3200
 Wire Wire Line
 	8900 2300 10200 2300
 Wire Notes Line width 10 style solid
 	6000 4000 6000 500 
 Text Notes 6100 800  0    100  ~ 20
-ADC (controller by Processor)
+ADC3 (controller by Processor)
 Text Label 10200 2300 0    50   ~ 0
 VBAT_IN_MON
 Text Label 10200 3200 0    50   ~ 0
 TEMP_MON
-Text Label 4300 3000 0    50   ~ 0
-ESW_IS
-Text Label 10200 2900 0    50   ~ 0
-ESW_IS
 $Comp
 L transistor-mos:Q_NMOS_GSD Q?
 U 1 1 5EC7B2B9
@@ -776,24 +762,81 @@ Wire Wire Line
 	8300 1900 8300 2300
 Wire Wire Line
 	8300 2300 8500 2300
-$Comp
-L analog-ti:TLA2024 U?
-U 1 1 5F102B71
-P 7500 2000
-AR Path="/5E83D44B/5F102B71" Ref="U?"  Part="1" 
-AR Path="/5EBDE4A1/5F102B71" Ref="U?"  Part="1" 
-AR Path="/5E8151C7/5F102B71" Ref="U2"  Part="1" 
-AR Path="/5E9E174E/5F102B71" Ref="U?"  Part="1" 
-F 0 "U2" H 7500 2650 50  0000 C CNN
-F 1 "TLA2024IRUGR" H 7500 1350 50  0000 C CNN
-F 2 "IC-QFN:QFN10_1.5x2.0_P0.5_001" H 7500 2000 50  0001 C CNN
-F 3 "" H 7500 2000 50  0001 C CNN
-F 4 "TLA2024IRUGR" H 7500 2000 50  0001 C CNN "PartName"
-	1    7500 2000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7900 1700 8700 1700
 Wire Wire Line
 	7900 1500 8700 1500
+$Comp
+L analog-ti:ADS1015 U2
+U 1 1 5F6F676D
+P 7500 2000
+F 0 "U2" H 7500 2650 50  0000 C CNN
+F 1 "ADS1015IDGSR" H 7500 1350 50  0000 C CNN
+F 2 "IC-SOP:VSSOP10_3.0x3.0_P0.5" H 7500 2000 50  0001 C CNN
+F 3 "" H 7500 2000 50  0001 C CNN
+F 4 "ADS1015IDGSR" H 7500 2000 50  0001 C CNN "PartName"
+	1    7500 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10200 2900 9900 2900
+Wire Wire Line
+	9700 2700 9700 2000
+$Comp
+L supply-alias:VSTBY #PWR018
+U 1 1 5EF3AEA3
+P 9700 2000
+F 0 "#PWR018" H 9700 1850 50  0001 C CNN
+F 1 "VSTBY" H 9700 2140 50  0000 C CNN
+F 2 "" H 9700 2000 50  0001 C CNN
+F 3 "" H 9700 2000 50  0001 C CNN
+	1    9700 2000
+	1    0    0    -1  
+$EndComp
+Text Label 9200 2900 2    50   ~ 0
+ESW_IS_CLAMPED
+Text Label 4300 3000 0    50   ~ 0
+ESW_IS_CLAMPED
+$Comp
+L supply-alias:GND #PWR?
+U 1 1 5EF74F50
+P 9300 3600
+AR Path="/5E314B49/5EF74F50" Ref="#PWR?"  Part="1" 
+AR Path="/5F5738E6/5EF74F50" Ref="#PWR?"  Part="1" 
+AR Path="/5E8151C7/5EF74F50" Ref="#PWR017"  Part="1" 
+F 0 "#PWR017" H 9300 3350 50  0001 C CNN
+F 1 "GND" H 9300 3450 50  0000 C CNN
+F 2 "" H 9300 3600 50  0001 C CNN
+F 3 "" H 9300 3600 50  0001 C CNN
+	1    9300 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 3600 9300 3500
+$Comp
+L passive:C C?
+U 1 1 5EF74F58
+P 9300 3400
+AR Path="/5E83D44B/5EF74F58" Ref="C?"  Part="1" 
+AR Path="/5E8151C7/5EF74F58" Ref="C6"  Part="1" 
+AR Path="/5E314B49/5EF74F58" Ref="C?"  Part="1" 
+F 0 "C6" H 9400 3450 50  0000 L CNN
+F 1 "1u" H 9400 3350 50  0000 L CNN
+F 2 "Capacitor-Chip:C_CHIP_1005_Hand_NoSilk" H 9400 3300 50  0001 C CNN
+F 3 "" H 9325 3500 50  0001 C CNN
+F 4 "TMK105BJ105MV-F" H 9300 3400 50  0001 C CNN "PartName"
+	1    9300 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 2900 9300 3300
+Connection ~ 9300 2900
+Wire Wire Line
+	9300 2900 8100 2900
+Text HLabel 5000 2000 2    50   Input ~ 0
+~SW_WAKE_SLEEP
+Wire Wire Line
+	5000 2000 4100 2000
+Text Notes 3000 3500 0    50   ~ 0
+I2C Address : 0b0001000
 $EndSCHEMATC
