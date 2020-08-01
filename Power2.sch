@@ -1299,7 +1299,7 @@ Wire Wire Line
 	4100 6500 3600 6500
 Connection ~ 3600 6500
 $Comp
-L diode:D_PN D?
+L diode:D_Schottkey D?
 U 1 1 5F3C97DD
 P 4800 6500
 AR Path="/5E314B49/5F3C97DD" Ref="D?"  Part="1" 
@@ -1773,4 +1773,6 @@ Wire Wire Line
 	9100 4400 10300 4400
 Wire Wire Line
 	9100 4800 10300 4800
+NoConn ~ 2600 4500
+NoConn ~ 3400 2000
 $EndSCHEMATC
