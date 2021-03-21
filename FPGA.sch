@@ -328,8 +328,8 @@ Text HLabel 1500 1200 0    50   Input ~ 0
 FPGA_SPI_MOSI
 Text HLabel 1500 1700 0    50   Output ~ 0
 FPGA_SPI_MISO
-Text HLabel 1500 4500 0    50   Output ~ 0
-FPGA_INT
+Text HLabel 1500 4500 0    50   Input ~ 0
+FPGA_MODE
 Wire Wire Line
 	1500 2400 2300 2400
 Wire Wire Line

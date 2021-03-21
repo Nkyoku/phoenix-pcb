@@ -68,7 +68,7 @@ $EndComp
 Wire Wire Line
 	1600 3500 1900 3500
 $Comp
-L memory:MX25R8035F U?
+L memory:MX25Rxx35F U?
 U 1 1 5ED2190A
 P 2500 4000
 AR Path="/5E4B5786/5ED2190A" Ref="U?"  Part="1" 
